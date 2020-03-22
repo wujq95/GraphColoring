@@ -1,7 +1,4 @@
-import java.util.HashSet;
-import java.util.LinkedHashMap;
-import java.util.Random;
-import java.util.Set;
+import java.util.*;
 
 public class RandomGraphGenerator {
 
@@ -63,33 +60,76 @@ public class RandomGraphGenerator {
         return graph;
     }
 
-    //different ordering input
-    //(a) generate the input sequence in random order;
-    // (c) generate the input sequence by alternatively presenting 5 nodes from U and 5 nodes from V ;
-    // (d) anything else you might want to try.
-    public LinkedHashMap<String, Set<String>> generateVAMPHOrder1(BipartiteGraph graph) {
-        int N = graph.N;
-        int random = new Random().nextInt(2 * N) + 1;
+    //input order presentation: (a) generate the input sequence in random order;
+    public LinkedHashMap<String, Set<String>> generateVAMPHGraph(BipartiteGraph graph) {
+        Set<String> originalvertexSet = graph.getAdjacentVertices().keySet();
+        List<String> vertexList = new ArrayList<>(originalvertexSet);
+        Collections.shuffle(vertexList);
 
-        if (random <= N) {
-
-        } else {
-
-        }
-
-        return null;
+        return generateVAMPHModel(graph, vertexList);
     }
 
-    // (b) generate the input sequence by alternatively presenting one node from U and one node from V until all nodes are presented;
+    //input order presentation: (b) generate the input sequence by alternatively presenting one node from U and one node from V until all nodes are presented;
     public LinkedHashMap<String, Set<String>> generateVAMPHOrder2(BipartiteGraph graph) {
-        int N = graph.N;
-        int randomU = new Random().nextInt(N) + 1;
-        int randomV = new Random().nextInt(N) + 1;
+        Set<String> USet = graph.getVertexUSet();
+        Set<String> VSet = graph.getVertexVSet();
+        List<String> UList = new ArrayList<>(USet);
+        Collections.shuffle(UList);
+        List<String> VList = new ArrayList<>(VSet);
+        Collections.shuffle(VList);
 
-        LinkedHashMap<String, Set<String>> VAMPH = new LinkedHashMap<>();
-        Set<String> neighbors = graph.getAdjacentVertices().get("U" + randomU);
+        List<String> vertexList = new LinkedList<>();
+        for (int i = 0; i < graph.N; i++) {
+            vertexList.add(UList.get(i));
+            vertexList.add(VList.get(i));
+        }
 
-        return null;
+        return generateVAMPHModel(graph, vertexList);
+    }
+
+    //input order presentation: (c) generate the input sequence by alternatively presenting 5 nodes from U and 5 nodes from V;
+    public LinkedHashMap<String, Set<String>> generateVAMPHOrder3(BipartiteGraph graph) {
+        Set<String> USet = graph.getVertexUSet();
+        Set<String> VSet = graph.getVertexVSet();
+        List<String> UList = new ArrayList<>(USet);
+        Collections.shuffle(UList);
+        List<String> VList = new ArrayList<>(VSet);
+        Collections.shuffle(VList);
+
+        List<String> vertexList = new LinkedList<>();
+        int index = (graph.N) / 5;
+        int lastRound = (graph.N) % 5;
+        for (int i = 0; i < index; i++) {
+            for (int j = 0; j < 5; j++) {
+                vertexList.add(UList.get(5 * i + j));
+            }
+            for (int j = 0; j < 5; j++) {
+                vertexList.add(VList.get(5 * i + j));
+            }
+        }
+        for(int i = 0;i<lastRound;i++){
+            vertexList.add(UList.get(5 * index + i));
+        }
+        for(int i = 0;i<lastRound;i++){
+            vertexList.add(VList.get(5 * index + i));
+        }
+
+        return generateVAMPHModel(graph, vertexList);
+    }
+
+    public LinkedHashMap<String, Set<String>> generateVAMPHModel(BipartiteGraph graph, List<String> vertexList) {
+        Set<String> appeared = new HashSet<>();
+        LinkedHashMap<String, Set<String>> adjacentVertices = graph.getAdjacentVertices();
+        LinkedHashMap<String, Set<String>> graphOrderingInput = new LinkedHashMap<>();
+        for (String vertex : vertexList) {
+            appeared.add(vertex);
+
+            Set<String> neighbors = adjacentVertices.get(vertex);
+            Set<String> appearedNeighbors = findAppearedNeighbors(appeared, neighbors);
+            graphOrderingInput.put(vertex, appearedNeighbors);
+        }
+
+        return graphOrderingInput;
     }
 
     public Set<String> findAppearedNeighbors(Set<String> appeared, Set<String> neighbors) {
