@@ -117,6 +117,7 @@ public class RandomGraphGenerator {
         return generateVAMPHModel(graph, vertexList);
     }
 
+    //generate VAM-PH model based on input order
     public LinkedHashMap<String, Set<String>> generateVAMPHModel(BipartiteGraph graph, List<String> vertexList) {
         Set<String> appeared = new HashSet<>();
         LinkedHashMap<String, Set<String>> adjacentVertices = graph.getAdjacentVertices();
