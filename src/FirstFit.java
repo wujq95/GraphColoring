@@ -25,4 +25,6 @@ public class FirstFit {
         map.put(vertex,num);
         colorNum = Math.max(colorNum,num);
     }
+
+
 }
