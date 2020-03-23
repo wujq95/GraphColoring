@@ -22,6 +22,9 @@ public class RandomGraphGenerator {
         Set<String> VSet = new HashSet<>();
         LinkedHashMap<String, Set<String>> adjacentVertices = new LinkedHashMap<>();
 
+        graph.setN(N);
+        graph.setP(P);
+
         for (int i = 1; i <= N; i++) {
             String U = "U" + i;
             adjacentVertices.put(U, new HashSet<>());
@@ -79,7 +82,7 @@ public class RandomGraphGenerator {
         Collections.shuffle(VList);
 
         List<String> vertexList = new LinkedList<>();
-        for (int i = 0; i < graph.N; i++) {
+        for (int i = 0; i < graph.getN(); i++) {
             vertexList.add(UList.get(i));
             vertexList.add(VList.get(i));
         }
@@ -97,8 +100,8 @@ public class RandomGraphGenerator {
         Collections.shuffle(VList);
 
         List<String> vertexList = new LinkedList<>();
-        int index = (graph.N) / 5;
-        int lastRound = (graph.N) % 5;
+        int index = (graph.getN()) / 5;
+        int lastRound = (graph.getN()) % 5;
         for (int i = 0; i < index; i++) {
             for (int j = 0; j < 5; j++) {
                 vertexList.add(UList.get(5 * i + j));
@@ -107,10 +110,10 @@ public class RandomGraphGenerator {
                 vertexList.add(VList.get(5 * i + j));
             }
         }
-        for(int i = 0;i<lastRound;i++){
+        for (int i = 0; i < lastRound; i++) {
             vertexList.add(UList.get(5 * index + i));
         }
-        for(int i = 0;i<lastRound;i++){
+        for (int i = 0; i < lastRound; i++) {
             vertexList.add(VList.get(5 * index + i));
         }
 
