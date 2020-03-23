@@ -12,7 +12,7 @@ public class FirstFit {
         //get the color of neighbors
         Iterator<String> it = neighbor.iterator();
         while (it.hasNext()){
-            String str = it.next();
+            String str = (String) it.next();
             int color = map.get(str);
             colorSet.add(color);
         }

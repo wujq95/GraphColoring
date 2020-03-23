@@ -8,7 +8,9 @@ public class Main {
     public static void main(String[] args) {
 
         FirstFit ff = new FirstFit();
+        CBIP cbip = new CBIP();
         FirstFit.colorNum=0;
+        CBIP.colorNum = 0;
 
         int num = 0;
         RandomGraphGenerator rg = new RandomGraphGenerator();
@@ -17,13 +19,15 @@ public class Main {
         for(Map.Entry<String, Set<String>> entry:input.entrySet()){
             String vertex = entry.getKey();
             Set<String> neighbor = entry.getValue();
-            ff.FirstFit(vertex,neighbor);
+            //ff.FirstFit(vertex,neighbor);
+            cbip.CBIP(vertex,neighbor);
             num++;
         }
 
         System.out.println(num);
-        System.out.println(FirstFit.colorNum);
-        System.out.println(checkDup(input));
+        //System.out.println(FirstFit.colorNum);
+        System.out.println(CBIP.colorNum);
+        //System.out.println(checkDup(input));
     }
 
 
