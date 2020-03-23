@@ -64,7 +64,7 @@ public class RandomGraphGenerator {
     }
 
     //input order presentation: (a) generate the input sequence in random order;
-    public LinkedHashMap<String, Set<String>> generateVAMPHGraph(BipartiteGraph graph) {
+    public LinkedHashMap<String, Set<String>> generateVAMPHOrder1(BipartiteGraph graph) {
         Set<String> originalvertexSet = graph.getAdjacentVertices().keySet();
         List<String> vertexList = new ArrayList<>(originalvertexSet);
         Collections.shuffle(vertexList);
