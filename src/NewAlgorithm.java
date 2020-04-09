@@ -25,7 +25,6 @@ public class NewAlgorithm {
         int m=0;
         for(int i=1;i<=max;i++){
             HashSet<String> set= getComponent(i,vertex);
-
             Iterator it = set.iterator();
             boolean flag1 = false;
             boolean flag2 = false;
@@ -84,18 +83,20 @@ public class NewAlgorithm {
 
 
     /**
-     * get the component form a1-ai and b1-bi
+     * get the connected component containing v whose colors are form {a1-ai} and {b1-bi}
      * @param n
      * @param vertex
      * @return
      */
     public static HashSet<String> getComponent(int n,String vertex){
 
+        //I1 and I2 are two sides of the connected component
         I1 = new HashSet<>();
         I2 = new HashSet<>();
         I1.add(vertex);
 
         HashSet<String> componentSet = new HashSet<>();
+        componentSet.add(vertex);
         Queue<String> queue = new LinkedList<>();
         queue.offer(vertex);
         while(!(queue.size()==0)){
@@ -119,6 +120,7 @@ public class NewAlgorithm {
             }
         }
 
+        componentSet.remove(vertex);
         return componentSet;
     }
 
