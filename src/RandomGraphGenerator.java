@@ -26,21 +26,14 @@ public class RandomGraphGenerator {
         graph.setP(P);
 
         for (int i = 1; i <= N; i++) {
-            String U = "U" + i;
-            adjacentVertices.put(U, new HashSet<>());
-            for (int j = 1; j <= N; j++) {
-                String V = "V" + j;
-                adjacentVertices.put(V, new HashSet<>());
-            }
-        }
-
-        for (int i = 1; i <= N; i++) {
-            String U = "U" + i;
+            String U = String.valueOf(i);
             USet.add(U);
+            adjacentVertices.put(U, new HashSet<>());
 
             for (int j = 1; j <= N; j++) {
-                String V = "V" + j;
+                String V = String.valueOf(N + j);
                 VSet.add(V);
+                adjacentVertices.put(V, new HashSet<>());
 
                 //determine randomly if the edge {Ui, Vj} is included in E using probability P
                 double determine = new Random().nextDouble();

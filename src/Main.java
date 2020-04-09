@@ -1,4 +1,7 @@
-import java.util.*;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.Set;
 
 public class Main {
 
@@ -6,7 +9,7 @@ public class Main {
 
         FirstFit ff = new FirstFit();
         CBIP cbip = new CBIP();
-        FirstFit.colorNum=0;
+        FirstFit.colorNum = 0;
         CBIP.colorNum = 0;
 
         int num = 0;
@@ -16,12 +19,14 @@ public class Main {
         NewAlgorithm newAlgorithm = new NewAlgorithm();
 
 
-        for(Map.Entry<String, Set<String>> entry:input.entrySet()){
+        for (Map.Entry<String, Set<String>> entry : input.entrySet()) {
             String vertex = entry.getKey();
             Set<String> neighbor = entry.getValue();
+            System.out.println("vertex: " + vertex + " neighbors: " + neighbor);
+
             //ff.FirstFit(vertex,neighbor);
             //cbip.CBIP(vertex,neighbor);
-            newAlgorithm.newAlgorithm(vertex,neighbor);
+            newAlgorithm.newAlgorithm(vertex, neighbor);
             num++;
 
         }
@@ -36,28 +41,28 @@ public class Main {
 
     /**
      * check if there are two adjacent points with same color
+     *
      * @param input
      * @return
      */
-    public static boolean checkDup(LinkedHashMap<String, Set<String>> input){
+    public static boolean checkDup(LinkedHashMap<String, Set<String>> input) {
         boolean flag = false;
-        for(Map.Entry<String, Set<String>> entry:input.entrySet()){
+        for (Map.Entry<String, Set<String>> entry : input.entrySet()) {
             String vertex = entry.getKey();
             Set<String> neighbor = entry.getValue();
             int v = NewAlgorithm.colorMap.get(vertex);
             Iterator<String> it = neighbor.iterator();
-            while (it.hasNext()){
+            while (it.hasNext()) {
                 String str = it.next();
                 int color = NewAlgorithm.colorMap.get(str);
-                if(color==v) {
-                    flag= true;
+                if (color == v) {
+                    flag = true;
                 }
 
             }
         }
         return flag;
     }
-
 
 
 }
