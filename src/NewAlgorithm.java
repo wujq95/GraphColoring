@@ -5,6 +5,8 @@ public class NewAlgorithm {
 
     static Map<String, Set<String>> vertexMap = new HashMap<>();
     static Map<String, Integer> colorMap = new HashMap<>();
+    static Set<String> I1;
+    static Set<String> I2;
 
     public void newAlgorithm(String vertex, Set<String> neighbor){
         vertexMap.put(vertex,neighbor);
@@ -23,12 +25,13 @@ public class NewAlgorithm {
         int m=0;
         for(int i=1;i<=max;i++){
             HashSet<String> set= getComponent(i,vertex);
+
             Iterator it = set.iterator();
             boolean flag1 = false;
             boolean flag2 = false;
             while (it.hasNext()){
                 String str = (String) it.next();
-                if(str.startsWith("U")){
+                if(I1.contains(str)){
                     if(colorMap.get(str)==i){
                         flag1 =true;
                     }
@@ -45,11 +48,11 @@ public class NewAlgorithm {
         if(m==0) m=1;
         HashSet<String> set= getComponent(m,vertex);
         Iterator it = set.iterator();
-        if(vertex.startsWith("U")){
+        if(I1.contains(vertex)){
             boolean flag = false;
             while (it.hasNext()){
                 String str = (String) it.next();
-                if((str.startsWith("V"))&&(colorMap.get(str)==m)) flag = true;
+                if((I2.contains(str))&&(colorMap.get(str)==m)) flag = true;
             }
             if(flag){
                 colorMap.put(vertex,-m);
@@ -60,7 +63,7 @@ public class NewAlgorithm {
             boolean flag = false;
             while (it.hasNext()){
                 String str = (String) it.next();
-                if((str.startsWith("U"))&&(colorMap.get(str)==m)) flag = true;
+                if(I1.contains(str)&&(colorMap.get(str)==m)) flag = true;
             }
             if(flag){
                 colorMap.put(vertex,-m);
@@ -80,7 +83,17 @@ public class NewAlgorithm {
     }
 
 
+    /**
+     * get the component form a1-ai and b1-bi
+     * @param n
+     * @param vertex
+     * @return
+     */
     public static HashSet<String> getComponent(int n,String vertex){
+
+        I1 = new HashSet<>();
+        I2 = new HashSet<>();
+        I1.add(vertex);
 
         HashSet<String> componentSet = new HashSet<>();
         Queue<String> queue = new LinkedList<>();
@@ -96,6 +109,11 @@ public class NewAlgorithm {
                     if(colorMap.get(neighborName)<=n){
                         componentSet.add(neighborName);
                         queue.offer(neighborName);
+                        if(I1.contains(str)){
+                            I2.add(neighborName);
+                        }else{
+                            I1.add(neighborName);
+                        }
                     }
                 }
             }
@@ -104,6 +122,10 @@ public class NewAlgorithm {
         return componentSet;
     }
 
+    /**
+     * count the total number of color used
+     * @return
+     */
     public int getColorNum(){
         Set<Integer> set = new HashSet<>();
         for(Map.Entry<String,Integer> entry:colorMap.entrySet()){
