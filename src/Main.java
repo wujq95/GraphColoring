@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -5,13 +6,29 @@ import java.util.Set;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+
+    	Graph gr = new Graph();
+    	gr.read("SampleMMC.mtx");
+    	  
+    	System.out.println();
+    	//gr.printGraphMap(gr.graphMap);
+    	
+    	MakeBipartite mb1 = new MakeBipartite();
+    	mb1.randomBipartiteMap(gr);;
+    	//mb1.DisplayBipartiteGraph();
+    	
+    	MakeBipartite mb2 = new MakeBipartite();
+    	mb2.duplicateBipartiteMap(gr);
+    	//mb2.DisplayBipartiteGraph();
+    	
 
         FirstFit ff = new FirstFit();
         CBIP cbip = new CBIP();
         FirstFit.colorNum=0;
         CBIP.colorNum = 0;
-
+        
+        
         int num = 0;
         RandomGraphGenerator rg = new RandomGraphGenerator();
         BipartiteGraph graph = rg.generateRandomGraph();
