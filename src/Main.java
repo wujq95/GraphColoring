@@ -30,7 +30,7 @@ public class Main {
         //System.out.println(FirstFit.colorNum);
         //System.out.println(CBIP.colorNum);
         System.out.println(newAlgorithm.getColorNum());
-        System.out.println(checkDup(input));
+        System.out.println(checkDup(graph.adjacentVertices));
     }
 
 
