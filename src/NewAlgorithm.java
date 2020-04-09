@@ -3,108 +3,114 @@ import java.util.*;
 
 public class NewAlgorithm {
 
-    static ArrayList<HashSet<String>> dList = new ArrayList<>();
-    static ArrayList<HashSet<String>> cList = new ArrayList<>();
-    static HashMap<String,Integer> res = new HashMap<>();
-    int n;
-    int d;
-
-    HashMap<String, Set<String>> map = new HashMap<>();
-    static boolean flag = false;
-
-    NewAlgorithm() { }
-
-
-    NewAlgorithm(int n,int d){
-        for(int i=0;i<d;i++){
-            HashSet<String> set = new HashSet<>();
-            dList.add(set);
-        }
-        this.n = n;
-        this.d = d;
-    }
-
+    static Map<String, Set<String>> vertexMap = new HashMap<>();
+    static Map<String, Integer> colorMap = new HashMap<>();
 
     public void newAlgorithm(String vertex, Set<String> neighbor){
+        vertexMap.put(vertex,neighbor);
 
-        map.put(vertex,neighbor);
-
-        for(int i=0;i<dList.size();i++){
-            HashSet<String> set = dList.get(i);
-            if(set.size()==0){
-                set.add(vertex);
-                dList.set(i,set);
-                return;
+        //get max n
+        int max = 0;
+        for(Map.Entry<String,Integer> entry:colorMap.entrySet()){
+            Integer integer  = entry.getValue();
+            if(integer>0){
+                max = Math.max(max,integer);
+            }else{
+                max = Math.max(max,-integer);
             }
+        }
+
+        int m=0;
+        for(int i=1;i<=max;i++){
+            HashSet<String> set= getComponent(i,vertex);
             Iterator it = set.iterator();
-            boolean flag = true;
-            while(it.hasNext()){
+            boolean flag1 = false;
+            boolean flag2 = false;
+            while (it.hasNext()){
                 String str = (String) it.next();
-                if(neighbor.contains(str)){
-                   flag = false;
-                   break;
+                if(str.startsWith("U")){
+                    if(colorMap.get(str)==i){
+                        flag1 =true;
+                    }
+                }else{
+                    if(colorMap.get(str)==i){
+                        flag2 =true;
+                    }
                 }
+            }
+            if(flag1&&flag2){
+                m=i+1;
+            }
+        }
+        if(m==0) m=1;
+        HashSet<String> set= getComponent(m,vertex);
+        Iterator it = set.iterator();
+        if(vertex.startsWith("U")){
+            boolean flag = false;
+            while (it.hasNext()){
+                String str = (String) it.next();
+                if((str.startsWith("V"))&&(colorMap.get(str)==m)) flag = true;
             }
             if(flag){
-                set.add(vertex);
-                dList.set(i,set);
-                return;
+                colorMap.put(vertex,-m);
+            } else {
+                colorMap.put(vertex,m);
+            }
+        }else{
+            boolean flag = false;
+            while (it.hasNext()){
+                String str = (String) it.next();
+                if((str.startsWith("U"))&&(colorMap.get(str)==m)) flag = true;
+            }
+            if(flag){
+                colorMap.put(vertex,-m);
+            } else {
+                colorMap.put(vertex,m);
             }
         }
 
-        int index = 0;
-        int setSize = 0;
+        Iterator iterator = neighbor.iterator();
+        while(iterator.hasNext()){
+            String neigh = (String) iterator.next();
+            Set<String> set2 = vertexMap.get(neigh);
+            set2.add(vertex);
+            vertexMap.put(neigh,set2);
+        }
 
-        for(int i=0;i<cList.size();i++){
-            HashSet<String> set = cList.get(i);
-            int size = set.size();
-            int num = (int)Math.pow(d/2/n,Math.pow(2,size-1));
-            num *= 2;
-            num *= n;
-            Iterator it = set.iterator();
-            String str = (String) it.next();
-            Set setNeighbor = map.get(str);
+    }
+
+
+    public static HashSet<String> getComponent(int n,String vertex){
+
+        HashSet<String> componentSet = new HashSet<>();
+        Queue<String> queue = new LinkedList<>();
+        queue.offer(vertex);
+        while(!(queue.size()==0)){
+            String str = queue.poll();
+            //check the neighbor of the point
+            Set<String> pointNeighbor = vertexMap.get(str);
+            Iterator it = pointNeighbor.iterator();
             while(it.hasNext()){
-                String s = (String) it.next();
-                setNeighbor.retainAll(map.get(s));
-            }
-            if(setNeighbor.size()>=num){
-                if(size>setSize){
-                    index = i;
-                    setSize =size;
+                String neighborName = (String) it.next();
+                if(!componentSet.contains(neighborName)){
+                    if(colorMap.get(neighborName)<=n){
+                        componentSet.add(neighborName);
+                        queue.offer(neighborName);
+                    }
                 }
             }
-
         }
 
-        if(setSize>0){
-            HashSet<String> set = cList.get(index);
-            set.add(vertex);
-            checkDupli(neighbor,set);
-            cList.set(index,set);
-        }else{
-            HashSet<String> set = new HashSet<>();
-            set.add(vertex);
-            cList.add(set);
+        return componentSet;
+    }
+
+    public int getColorNum(){
+        Set<Integer> set = new HashSet<>();
+        for(Map.Entry<String,Integer> entry:colorMap.entrySet()){
+            Integer integer  = entry.getValue();
+            set.add(integer);
         }
-
+        return set.size();
     }
-
-    public int getNum(){
-        return dList.size()+cList.size();
-    }
-
-    public void checkDupli(Set<String> neighbor,HashSet<String> set){
-        Iterator it = set.iterator();
-        while(it.hasNext()){
-            String str = (String) it.next();
-            if(neighbor.contains(str)){
-                flag = true;
-                return;
-            }
-        }
-    }
-
-
 
 }

@@ -1,7 +1,4 @@
-import java.util.Iterator;
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class Main {
 
@@ -16,25 +13,24 @@ public class Main {
         RandomGraphGenerator rg = new RandomGraphGenerator();
         BipartiteGraph graph = rg.generateRandomGraph();
         LinkedHashMap<String, Set<String>> input = rg.generateVAMPHOrder1(graph);
-        int n=1000;
-        int d =2;
-        NewAlgorithm newAlgorithm = new NewAlgorithm(n,d);
+        NewAlgorithm newAlgorithm = new NewAlgorithm();
+
 
         for(Map.Entry<String, Set<String>> entry:input.entrySet()){
             String vertex = entry.getKey();
             Set<String> neighbor = entry.getValue();
             //ff.FirstFit(vertex,neighbor);
             //cbip.CBIP(vertex,neighbor);
-            num++;
             newAlgorithm.newAlgorithm(vertex,neighbor);
+            num++;
+
         }
 
-        System.out.println(newAlgorithm.getNum());
         System.out.println(num);
-        System.out.println(NewAlgorithm.flag);
         //System.out.println(FirstFit.colorNum);
         //System.out.println(CBIP.colorNum);
-        //System.out.println(checkDup(input));
+        System.out.println(newAlgorithm.getColorNum());
+        System.out.println(checkDup(input));
     }
 
 
@@ -48,14 +44,20 @@ public class Main {
         for(Map.Entry<String, Set<String>> entry:input.entrySet()){
             String vertex = entry.getKey();
             Set<String> neighbor = entry.getValue();
-            int v = CBIP.map.get(vertex);
+            int v = NewAlgorithm.colorMap.get(vertex);
             Iterator<String> it = neighbor.iterator();
             while (it.hasNext()){
                 String str = it.next();
-                int color = CBIP.map.get(str);
-                if(color==v) flag= true;
+                int color = NewAlgorithm.colorMap.get(str);
+                if(color==v) {
+                    flag= true;
+                }
+
             }
         }
         return flag;
     }
+
+
+
 }
