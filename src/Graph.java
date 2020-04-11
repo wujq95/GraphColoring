@@ -17,6 +17,10 @@ public class Graph {
 	int verNum = 0;
 	int edgeNum = 0;
 	
+    Set<String> vertexUSet = new HashSet<String>();
+    Set<String> vertexVSet = new HashSet<String>();
+    //int[] colorGroup;
+    
 //	ArrayList<ArrayList<Integer>> graphList = new ArrayList<ArrayList<Integer>>(verNum);
 	
 	LinkedHashMap<String, Set<String>> graphMap = new LinkedHashMap<String, Set<String>>();
@@ -72,8 +76,52 @@ public class Graph {
 			graphMap.get(u).add(v);
 			graphMap.get(v).add(u);			
 		}
+		if(isBipartiteFullCheck(graphMap)) {
+			System.out.println("The Graph you read is a Bipartite Graph");
+		}
+		else {
+			System.out.println("The Graph you read is not a Bipartite Graph");
+		}
 	}
-	
+
+/*
+ * function name: isBipartiteFullCheck
+ * parameter: (LinkedHashMap<String, Set<String>>) graph
+ * Return true if the graph is a Bipartite Graph and save the U,V vertex sets
+ */
+	public boolean isBipartiteFullCheck(LinkedHashMap<String, Set<String>> graph) {
+		boolean check = true;
+		
+		//color group, -1 means not assigned, 0 means red, 1 means blue;
+		int[] colorGroup = new int[verNum];
+		for(int i = 0; i<colorGroup.length;i++) {
+			colorGroup[i] = -1;
+		}
+
+		
+		for(int i = 0; i<colorGroup.length; i++) {
+			if(colorGroup[i] == -1) {
+				boolean rowCheck = isBipartite(graph, i, colorGroup);
+				if(rowCheck == false) {
+					return false;
+				}
+			}
+		}
+		//get the U Set and V set
+		for(int i = 0; i<colorGroup.length; i++) {
+			if(colorGroup[i] == 0) {
+				vertexUSet.add(Integer.toString(i+1));
+				
+			}
+			else if(colorGroup[i]==1){
+				vertexVSet.add(Integer.toString(i+1));
+			}
+			else {
+				return false;
+			}
+		}
+		return check;
+	}
 	
 /*
  * function name: isBipartite
@@ -83,24 +131,26 @@ public class Graph {
  * Assigned the red color on the neighbor of its neighbor and 
  * The graph is not a bipartite graph if two adjacency vertex maintain same color
  */
-	public boolean isBipartite(LinkedHashMap<String, Set<String>> graph) {
+	public boolean isBipartite(LinkedHashMap<String, Set<String>> graph, int tar, int colGup[]) {
 		boolean checker = true;
-
-		//color group, -1 means not assigned, 0 means red, 1 means blue;
-		int[] colorGroup = new int[graph.size()];
-		for(int i = 0; i<colorGroup.length;i++) {
-			colorGroup[i] = -1;
-		}
 		//assign the vertex "1" to color red
-		colorGroup[0] = 0;
+		colGup[tar] = 0;
+//		//color group, -1 means not assigned, 0 means red, 1 means blue;
+//		colorGroup = new int[graph.size()];
+//		for(int i = 0; i<colorGroup.length;i++) {
+//			colorGroup[i] = -1;
+//		}
+//		//assign the vertex "1" to color red
+//		colorGroup[0] = 0;
 
 		//BFS
 		LinkedList<String> vertexQ = new LinkedList<String>();
 		Set<String> visited = new HashSet<String>();
+		String tarVertex = Integer.toString(tar + 1);
 		//vertex "1" visited
-		visited.add("1");
+		visited.add(tarVertex);
 		//vertex "1" into queue
-		vertexQ.add("1");
+		vertexQ.add(tarVertex);
 		while(vertexQ.size()!=0) {
 			//FIFO vertex
 			String vertex = vertexQ.pop();
@@ -116,13 +166,14 @@ public class Graph {
 			    int vertexIndex = Integer.parseInt(vertex)-1;
 				if(!visited.contains(adj)) {
 					visited.add(adj);
+					vertexQ.add(adj);
 					//assign the adjacent vertex to opposite color
-					colorGroup[adjIndex] = 1 - colorGroup[vertexIndex];
+					colGup[adjIndex] = 1 - colGup[vertexIndex];
 					
 				}
 				//if the the vertex and neighbor has the same color, then return False;
 				boolean hasEdge = graph.get(vertex).contains(adj);
-				if(hasEdge && colorGroup[adjIndex] == colorGroup[vertexIndex]) {
+				if(hasEdge && colGup[adjIndex] == colGup[vertexIndex]) {
 					return false;
 				}
 

@@ -11,8 +11,8 @@ public class MakeBipartite {
 	int verNum = 0;
 	LinkedHashMap<String, Set<String>> makeGraphMap = new LinkedHashMap<String, Set<String>>();
 //	ArrayList<ArrayList<Integer>> dupGraph = new ArrayList<ArrayList<Integer>>(verNum);
-	
-
+    Set<String> vertexUSet = new HashSet<String>();
+    Set<String> vertexVSet = new HashSet<String>();
 	
 /*
 * function name: duplicateBipartiteMap
@@ -42,6 +42,8 @@ public class MakeBipartite {
 				String newV = Integer.toString(dup_v);
 				makeGraphMap.get(vertex).add(newV);
 				makeGraphMap.get(newV).add(vertex);
+				vertexUSet.add(vertex);
+				vertexVSet.add(newV);
 			}
 					
 		}
@@ -82,11 +84,14 @@ public class MakeBipartite {
 		for(int i = 0; i < orgGraph_size; i++) {
 			if(i<v_num) {
 				vSet.add(orgSet.get(i));
+				vertexUSet.add(Integer.toString(i+1));
 			}
 			else {
 				uSet.add(orgSet.get(i));
+				vertexVSet.add(Integer.toString(i+1));
 			}
 		}
+
 		//go through edges set in graph G, and connect the Bipartite Graph V, U
 		for(int i = 0; i<vSet.size();i++) {
 			//retrieve each vertex from vSet
