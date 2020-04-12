@@ -21,7 +21,7 @@ public class Main {
         FileWriter fw2 = new FileWriter("src/CBIP.txt");
         PrintWriter pw2 = new PrintWriter(fw2);
         FileWriter fw3 = new FileWriter("src/NewAlgorithm.txt");
-        PrintWriter pw3 = new PrintWriter(fw2);
+        PrintWriter pw3 = new PrintWriter(fw3);
 
 
         int num = 0;
