@@ -1,10 +1,5 @@
 import java.io.IOException;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.LinkedHashMap;
-import java.util.LinkedList;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class BenchMarkTest {
 
@@ -28,7 +23,7 @@ public class BenchMarkTest {
         System.out.println(isBipartite(makeBipartite.makeGraphMap));
         System.out.println("U Set " + makeBipartite.vertexUSet);
         System.out.println("V Set " + makeBipartite.vertexVSet);
-        
+
         //Convert a graph to a Bipartite Graph Using Random Method
         MakeBipartite makeBipartite1 = new MakeBipartite();
         makeBipartite1.randomBipartiteMap(graph);
@@ -36,19 +31,19 @@ public class BenchMarkTest {
         System.out.println(isBipartite(makeBipartite1.makeGraphMap));
         System.out.println("U Set " + makeBipartite1.vertexUSet);
         System.out.println("V Set " + makeBipartite1.vertexVSet);
-        
-        //Random Generate a Graph
-        RandomGraphGenerator randomGraphGenerator = new RandomGraphGenerator();
+
         BipartiteGraph bipartiteGraph = new BipartiteGraph();
         bipartiteGraph.setAdjacentVertices(makeBipartite.makeGraphMap);
-        
+        bipartiteGraph.setVertexVSet(makeBipartite.vertexVSet);
+        bipartiteGraph.setVertexUSet(makeBipartite.vertexUSet);
+
         System.out.println("Random Generate Graph: ");
         System.out.println(isBipartite(bipartiteGraph.adjacentVertices));
-        
-        
-        LinkedHashMap<String, Set<String>> list = randomGraphGenerator.generateVAMPHOrder1(bipartiteGraph);
+
+        //Order1
+        LinkedHashMap<String, Set<String>> list = GenerateVAMPHOrder.generateVAMPHOrder1(bipartiteGraph);
         int num = 0;
-        for (Map.Entry<String, Set<String>> entry : list.entrySet()){
+        for (Map.Entry<String, Set<String>> entry : list.entrySet()) {
             num++;
             String vertex = entry.getKey();
             Set<String> neighbor = entry.getValue();
@@ -60,93 +55,150 @@ public class BenchMarkTest {
 
 
         }
+
         System.out.println(num + " " + FirstFit.colorNum);
         System.out.println(num + " " + CBIP.colorNum);
         System.out.println(num + " " + newAlgorithm.getColorNum());
+        //Order2
+        LinkedHashMap<String, Set<String>> list2 = GenerateVAMPHOrder.generateVAMPHOrder2(bipartiteGraph);
+        int num2 = 0;
+        for (Map.Entry<String, Set<String>> entry : list2.entrySet()) {
+            num2++;
+            String vertex = entry.getKey();
+            Set<String> neighbor = entry.getValue();
+            //System.out.println("vertex: " + vertex + " neighbors: " + neighbor);
+
+            ff.FirstFit(vertex, neighbor);
+            cbip.CBIP(vertex, neighbor);
+            newAlgorithm.newAlgorithm(vertex, neighbor);
+
+
+        }
+        System.out.println(num2 + " " + FirstFit.colorNum);
+        System.out.println(num2 + " " + CBIP.colorNum);
+        System.out.println(num2 + " " + newAlgorithm.getColorNum());
+
+        //Order2
+        LinkedHashMap<String, Set<String>> list3 = GenerateVAMPHOrder.generateVAMPHOrder3(bipartiteGraph);
+        int num3 = 0;
+        for (Map.Entry<String, Set<String>> entry : list3.entrySet()) {
+            num3++;
+            String vertex = entry.getKey();
+            Set<String> neighbor = entry.getValue();
+            //System.out.println("vertex: " + vertex + " neighbors: " + neighbor);
+
+            ff.FirstFit(vertex, neighbor);
+            cbip.CBIP(vertex, neighbor);
+            newAlgorithm.newAlgorithm(vertex, neighbor);
+
+
+        }
+        System.out.println(num3 + " " + FirstFit.colorNum);
+        System.out.println(num3 + " " + CBIP.colorNum);
+        System.out.println(num3 + " " + newAlgorithm.getColorNum());
+
+        //Order2
+        LinkedHashMap<String, Set<String>> list4 = GenerateVAMPHOrder.generateVAMPHOrder4(bipartiteGraph);
+        int num4 = 0;
+        for (Map.Entry<String, Set<String>> entry : list4.entrySet()) {
+            num4++;
+            String vertex = entry.getKey();
+            Set<String> neighbor = entry.getValue();
+            //System.out.println("vertex: " + vertex + " neighbors: " + neighbor);
+
+            ff.FirstFit(vertex, neighbor);
+            cbip.CBIP(vertex, neighbor);
+            newAlgorithm.newAlgorithm(vertex, neighbor);
+
+
+        }
+        System.out.println(num4 + " " + FirstFit.colorNum);
+        System.out.println(num4 + " " + CBIP.colorNum);
+        System.out.println(num4 + " " + newAlgorithm.getColorNum());
     }
-    
-    
+
+
     /*
      * function name: isBipartite
      * parameter: (LinkedHashMap<String, Set<String>>) graph
      * Check whether the graph is a bipartite using BFS coloring
-     * Assigned Red color with the target vertex, and Blue color on its neighbor. 
-     * Assigned the red color on the neighbor of its neighbor and 
+     * Assigned Red color with the target vertex, and Blue color on its neighbor.
+     * Assigned the red color on the neighbor of its neighbor and
      * The graph is not a bipartite graph if two adjacency vertex maintain same color
      */
     public static boolean isBipartite(LinkedHashMap<String, Set<String>> graph) {
-    	boolean check = true;
+        boolean check = true;
 
-    	//color group, -1 means not assigned, 0 means red, 1 means blue;
-    	int[] colorGroup = new int[graph.size()];
-    	for(int i = 0; i<colorGroup.length;i++) {
-    		colorGroup[i] = -1;
-    	}
+        //color group, -1 means not assigned, 0 means red, 1 means blue;
+        int[] colorGroup = new int[graph.size()];
+        for (int i = 0; i < colorGroup.length; i++) {
+            colorGroup[i] = -1;
+        }
 
-    	//In case there is a vertex not connecting any other vertex but self loop
-    	for(int i = 0; i<colorGroup.length; i++) {
-    		if(colorGroup[i] == -1) {
-    			boolean rowCheck = isBipartiteAlgo(graph, i, colorGroup);
-    			if(rowCheck == false) {
-    				return false;
-    			}
-    		}
-    	}
+        //In case there is a vertex not connecting any other vertex but self loop
+        for (int i = 0; i < colorGroup.length; i++) {
+            if (colorGroup[i] == -1) {
+                boolean rowCheck = isBipartiteAlgo(graph, i, colorGroup);
+                if (rowCheck == false) {
+                    return false;
+                }
+            }
+        }
 
-    	return check;
+        return check;
     }
-    	
+
     /*
      * function name: isBipartiteAlgo
      * parameter: (LinkedHashMap<String, Set<String>>) graph
      * Check whether the graph is a bipartite using BFS coloring
-     * Assigned Red color with the target vertex, and Blue color on its neighbor. 
-     * Assigned the red color on the neighbor of its neighbor and 
+     * Assigned Red color with the target vertex, and Blue color on its neighbor.
+     * Assigned the red color on the neighbor of its neighbor and
      * The graph is not a bipartite graph if two adjacency vertex maintain same color
      */
     public static boolean isBipartiteAlgo(LinkedHashMap<String, Set<String>> graph, int tar, int colGup[]) {
-    	boolean checker = true;
-    	//assign the vertex "1" to color red
-    	colGup[tar] = 0;
+        boolean checker = true;
+        //assign the vertex "1" to color red
+        colGup[tar] = 0;
 
-    	//BFS
-    	LinkedList<String> vertexQ = new LinkedList<String>();
-    	Set<String> visited = new HashSet<String>();
-    	String tarVertex = Integer.toString(tar + 1);
-    	//vertex "1" visited
-    	visited.add(tarVertex);
-    	//vertex "1" into queue
-    	vertexQ.add(tarVertex);
-    	while(vertexQ.size()!=0) {
-    		//FIFO vertex
-    		String vertex = vertexQ.pop();
-    		//check if the vertex has a self loop
-    		if(graph.get(vertex).contains(vertex)) {
-    			return false;
-    		}
-    		//Go through all adjacent vertex
-    		Iterator<String> it = graph.get(vertex).iterator();
-    		while(it.hasNext()) {
-    			String adj = it.next();
-    			int adjIndex = Integer.parseInt(adj)-1;
-    			int vertexIndex = Integer.parseInt(vertex)-1;
-    			if(!visited.contains(adj)) {
-    				visited.add(adj);
-    				vertexQ.add(adj);
-    				//assign the adjacent vertex to opposite color
-    				colGup[adjIndex] = 1 - colGup[vertexIndex];
+        //BFS
+        LinkedList<String> vertexQ = new LinkedList<String>();
+        Set<String> visited = new HashSet<String>();
+        String tarVertex = Integer.toString(tar + 1);
+        //vertex "1" visited
+        visited.add(tarVertex);
+        //vertex "1" into queue
+        vertexQ.add(tarVertex);
+        while (vertexQ.size() != 0) {
+            //FIFO vertex
+            String vertex = vertexQ.pop();
+            //check if the vertex has a self loop
+            if (graph.get(vertex).contains(vertex)) {
+                return false;
+            }
+            //Go through all adjacent vertex
+            Iterator<String> it = graph.get(vertex).iterator();
+            while (it.hasNext()) {
+                String adj = it.next();
+                int adjIndex = Integer.parseInt(adj) - 1;
+                int vertexIndex = Integer.parseInt(vertex) - 1;
+                if (!visited.contains(adj)) {
+                    visited.add(adj);
+                    vertexQ.add(adj);
+                    //assign the adjacent vertex to opposite color
+                    colGup[adjIndex] = 1 - colGup[vertexIndex];
 
-    			}
-    			//if the the vertex and neighbor has the same color, then return False;
-    			boolean hasEdge = graph.get(vertex).contains(adj);
-    			if(hasEdge && colGup[adjIndex] == colGup[vertexIndex]) {
-    				return false;
-    			}
+                }
+                //if the the vertex and neighbor has the same color, then return False;
+                boolean hasEdge = graph.get(vertex).contains(adj);
+                if (hasEdge && colGup[adjIndex] == colGup[vertexIndex]) {
+                    return false;
+                }
 
-    		}
-    	}
+            }
+        }
 
 
-    	return checker;
+        return checker;
     }
 }
