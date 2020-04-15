@@ -137,4 +137,28 @@ public class NewAlgorithm {
         return set.size();
     }
 
+    /**
+     * check if there are two adjacent points with same color
+     *
+     * @param input
+     * @return
+     */
+    public static boolean checkDup(LinkedHashMap<String, Set<String>> input) {
+        boolean flag = false;
+        for (Map.Entry<String, Set<String>> entry : input.entrySet()) {
+            String vertex = entry.getKey();
+            Set<String> neighbor = entry.getValue();
+            int v = NewAlgorithm.colorMap.get(vertex);
+            Iterator<String> it = neighbor.iterator();
+            while (it.hasNext()) {
+                String str = it.next();
+                int color = NewAlgorithm.colorMap.get(str);
+                if (color == v) {
+                    flag = true;
+                }
+
+            }
+        }
+        return flag;
+    }
 }

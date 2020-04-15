@@ -56,4 +56,31 @@ public class CBIP {
         map.put(vertex,num);
         colorNum = Math.max(colorNum,num);
     }
+
+    /**
+     * check if there are two adjacent points with same color
+     *
+     * @param input
+     * @return
+     */
+    public static boolean checkDup(LinkedHashMap<String, Set<String>> input) {
+        boolean flag = false;
+        for (Map.Entry<String, Set<String>> entry : input.entrySet()) {
+            String vertex = entry.getKey();
+            Set<String> neighbor = entry.getValue();
+            int v = map.get(vertex);
+            Iterator<String> it = neighbor.iterator();
+            while (it.hasNext()) {
+                String str = it.next();
+                int color = map.get(str);
+                if (color == v) {
+                    flag = true;
+                }
+
+            }
+        }
+        return flag;
+    }
+
+
 }

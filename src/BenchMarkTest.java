@@ -1,120 +1,187 @@
-import java.io.IOException;
+import java.io.FileWriter;
+import java.io.PrintWriter;
 import java.util.*;
 
 public class BenchMarkTest {
 
-    public static void main(String[] args) throws IOException {
-        FirstFit ff = new FirstFit();
-        CBIP cbip = new CBIP();
-        FirstFit.colorNum = 0;
-        CBIP.colorNum = 0;
-        NewAlgorithm newAlgorithm = new NewAlgorithm();
+    public static void main(String[] args) throws Exception {
+        runBenchmarkTest("/Users/okakiko/GraphColoring/BenchmarkGraphs/email-enron-only.mtx");
+        runBenchmarkTest("/Users/okakiko/GraphColoring/BenchmarkGraphs/rt-twitter-copen.mtx");
+        runBenchmarkTest("/Users/okakiko/GraphColoring/BenchmarkGraphs/socfb-Caltech36.mtx");
+        runBenchmarkTest("/Users/okakiko/GraphColoring/BenchmarkGraphs/socfb-Reed98.mtx");
+        runBenchmarkTest("BenchmarkGraphs/web-polblogs.mtx");
+    }
 
+    public static void runBenchmarkTest(String filePath) throws Exception {
         Graph graph = new Graph();
 
         //Read a graph from a mtx file, it will whether the graph is Bipartite Graph or not
-        graph.read("SampleMMC.mtx");
-        System.out.println("Original Graph ");
+        graph.read(filePath);
 
         //Convert a graph to a Bipartite Graph Using Duplicate Method
         MakeBipartite makeBipartite = new MakeBipartite();
         makeBipartite.duplicateBipartiteMap(graph);
-        System.out.println("Duplicate Bipartite Graph: ");
-        System.out.println(isBipartite(makeBipartite.makeGraphMap));
-        System.out.println("U Set " + makeBipartite.vertexUSet);
-        System.out.println("V Set " + makeBipartite.vertexVSet);
 
         //Convert a graph to a Bipartite Graph Using Random Method
         MakeBipartite makeBipartite1 = new MakeBipartite();
         makeBipartite1.randomBipartiteMap(graph);
-        System.out.println("Random Bipartite Graph: ");
-        System.out.println(isBipartite(makeBipartite1.makeGraphMap));
-        System.out.println("U Set " + makeBipartite1.vertexUSet);
-        System.out.println("V Set " + makeBipartite1.vertexVSet);
 
         BipartiteGraph bipartiteGraph = new BipartiteGraph();
-        bipartiteGraph.setAdjacentVertices(makeBipartite.makeGraphMap);
-        bipartiteGraph.setVertexVSet(makeBipartite.vertexVSet);
-        bipartiteGraph.setVertexUSet(makeBipartite.vertexUSet);
+        bipartiteGraph.setAdjacentVertices(makeBipartite1.makeGraphMap);
+        bipartiteGraph.setVertexVSet(makeBipartite1.vertexVSet);
+        bipartiteGraph.setVertexUSet(makeBipartite1.vertexUSet);
 
-        System.out.println("Random Generate Graph: ");
-        System.out.println(isBipartite(bipartiteGraph.adjacentVertices));
-
-        //Order1
-        LinkedHashMap<String, Set<String>> list = GenerateVAMPHOrder.generateVAMPHOrder1(bipartiteGraph);
-        int num = 0;
-        for (Map.Entry<String, Set<String>> entry : list.entrySet()) {
-            num++;
-            String vertex = entry.getKey();
-            Set<String> neighbor = entry.getValue();
-            //System.out.println("vertex: " + vertex + " neighbors: " + neighbor);
-
-            ff.FirstFit(vertex, neighbor);
-            cbip.CBIP(vertex, neighbor);
-            newAlgorithm.newAlgorithm(vertex, neighbor);
-
-
+        if (!isBipartite(bipartiteGraph.adjacentVertices)) {
+            throw new Exception("bipartite conversion failed");
         }
 
-        System.out.println(num + " " + FirstFit.colorNum);
-        System.out.println(num + " " + CBIP.colorNum);
-        System.out.println(num + " " + newAlgorithm.getColorNum());
-        //Order2
-        LinkedHashMap<String, Set<String>> list2 = GenerateVAMPHOrder.generateVAMPHOrder2(bipartiteGraph);
-        int num2 = 0;
-        for (Map.Entry<String, Set<String>> entry : list2.entrySet()) {
-            num2++;
-            String vertex = entry.getKey();
-            Set<String> neighbor = entry.getValue();
-            //System.out.println("vertex: " + vertex + " neighbors: " + neighbor);
+        FileWriter fw1 = new FileWriter("src/FirstFit.txt", true);
+        PrintWriter pw1 = new PrintWriter(fw1);
+        FileWriter fw2 = new FileWriter("src/CBIP.txt", true);
+        PrintWriter pw2 = new PrintWriter(fw2);
+        FileWriter fw3 = new FileWriter("src/NewAlgorithm.txt", true);
+        PrintWriter pw3 = new PrintWriter(fw3);
 
-            ff.FirstFit(vertex, neighbor);
-            cbip.CBIP(vertex, neighbor);
-            newAlgorithm.newAlgorithm(vertex, neighbor);
+        pw1.println("random method make bipartite" + filePath);
+        pw2.println("random method make bipartite" + filePath);
+        pw3.println("random method make bipartite" + filePath);
 
+        for (int i = 0; i < 5; i++) {
+            int num = 0;
+            FirstFit ff = new FirstFit();
+            CBIP cbip = new CBIP();
+            FirstFit.colorNum = 0;
+            CBIP.colorNum = 0;
+            NewAlgorithm newAlgorithm = new NewAlgorithm();
 
+            LinkedHashMap<String, Set<String>> input = GenerateVAMPHOrder.generateVAMPHOrder1(bipartiteGraph);
+            for (Map.Entry<String, Set<String>> entry : input.entrySet()) {
+                num++;
+                String vertex = entry.getKey();
+                Set<String> neighbor = entry.getValue();
+
+                ff.FirstFit(vertex, neighbor);
+                cbip.CBIP(vertex, neighbor);
+                newAlgorithm.newAlgorithm(vertex, neighbor);
+            }
+            if (FirstFit.checkDup(bipartiteGraph.getAdjacentVertices())) {
+                pw1.println("error");
+            }
+            if (CBIP.checkDup(bipartiteGraph.getAdjacentVertices())) {
+                pw2.println("error");
+            }
+            if (NewAlgorithm.checkDup(bipartiteGraph.getAdjacentVertices())) {
+                pw3.println("error");
+            }
+            pw1.println("NO." + i + " test for this graph and input order, the vertices number is " + num + ", input order is order1, the color number used is " + FirstFit.colorNum);
+            pw2.println("NO." + i + " test for this graph and input order, the vertices number is " + num + ", input order is order1, the color number used is " + CBIP.colorNum);
+            pw3.println("NO." + i + " test for this graph and input order, the vertices number is " + num + ", input order is order1, the color number used is " + newAlgorithm.getColorNum());
         }
-        System.out.println(num2 + " " + FirstFit.colorNum);
-        System.out.println(num2 + " " + CBIP.colorNum);
-        System.out.println(num2 + " " + newAlgorithm.getColorNum());
 
-        //Order2
-        LinkedHashMap<String, Set<String>> list3 = GenerateVAMPHOrder.generateVAMPHOrder3(bipartiteGraph);
-        int num3 = 0;
-        for (Map.Entry<String, Set<String>> entry : list3.entrySet()) {
-            num3++;
-            String vertex = entry.getKey();
-            Set<String> neighbor = entry.getValue();
-            //System.out.println("vertex: " + vertex + " neighbors: " + neighbor);
+        for (int i = 0; i < 5; i++) {
+            int num2 = 0;
+            FirstFit ff = new FirstFit();
+            CBIP cbip = new CBIP();
+            FirstFit.colorNum = 0;
+            CBIP.colorNum = 0;
+            NewAlgorithm newAlgorithm = new NewAlgorithm();
 
-            ff.FirstFit(vertex, neighbor);
-            cbip.CBIP(vertex, neighbor);
-            newAlgorithm.newAlgorithm(vertex, neighbor);
+            LinkedHashMap<String, Set<String>> input2 = GenerateVAMPHOrder.generateVAMPHOrder2(bipartiteGraph);
+            for (Map.Entry<String, Set<String>> entry : input2.entrySet()) {
+                num2++;
+                String vertex = entry.getKey();
+                Set<String> neighbor = entry.getValue();
 
+                ff.FirstFit(vertex, neighbor);
+                cbip.CBIP(vertex, neighbor);
+                newAlgorithm.newAlgorithm(vertex, neighbor);
+            }
 
+            if (FirstFit.checkDup(bipartiteGraph.getAdjacentVertices())) {
+                pw1.println("error");
+            }
+            if (CBIP.checkDup(bipartiteGraph.getAdjacentVertices())) {
+                pw2.println("error");
+            }
+            if (NewAlgorithm.checkDup(bipartiteGraph.getAdjacentVertices())) {
+                pw3.println("error");
+            }
+            pw1.println("NO." + i + " test for this graph and input order, the vertices number is " + num2 + ", input order is order2, the color number used is " + FirstFit.colorNum);
+            pw2.println("NO." + i + " test for this graph and input order, the vertices number is " + num2 + ", input order is order2, the color number used is " + CBIP.colorNum);
+            pw3.println("NO." + i + " test for this graph and input order, the vertices number is " + num2 + ", input order is order2, the color number used is " + newAlgorithm.getColorNum());
         }
-        System.out.println(num3 + " " + FirstFit.colorNum);
-        System.out.println(num3 + " " + CBIP.colorNum);
-        System.out.println(num3 + " " + newAlgorithm.getColorNum());
 
-        //Order2
-        LinkedHashMap<String, Set<String>> list4 = GenerateVAMPHOrder.generateVAMPHOrder4(bipartiteGraph);
-        int num4 = 0;
-        for (Map.Entry<String, Set<String>> entry : list4.entrySet()) {
-            num4++;
-            String vertex = entry.getKey();
-            Set<String> neighbor = entry.getValue();
-            //System.out.println("vertex: " + vertex + " neighbors: " + neighbor);
+        for (int i = 0; i < 5; i++) {
+            int num3 = 0;
+            FirstFit ff = new FirstFit();
+            CBIP cbip = new CBIP();
+            FirstFit.colorNum = 0;
+            CBIP.colorNum = 0;
+            NewAlgorithm newAlgorithm = new NewAlgorithm();
 
-            ff.FirstFit(vertex, neighbor);
-            cbip.CBIP(vertex, neighbor);
-            newAlgorithm.newAlgorithm(vertex, neighbor);
+            LinkedHashMap<String, Set<String>> input3 = GenerateVAMPHOrder.generateVAMPHOrder3(bipartiteGraph);
+            for (Map.Entry<String, Set<String>> entry : input3.entrySet()) {
+                num3++;
+                String vertex = entry.getKey();
+                Set<String> neighbor = entry.getValue();
 
-
+                ff.FirstFit(vertex, neighbor);
+                cbip.CBIP(vertex, neighbor);
+                newAlgorithm.newAlgorithm(vertex, neighbor);
+            }
+            if (FirstFit.checkDup(bipartiteGraph.getAdjacentVertices())) {
+                pw1.println("error");
+            }
+            if (CBIP.checkDup(bipartiteGraph.getAdjacentVertices())) {
+                pw2.println("error");
+            }
+            if (NewAlgorithm.checkDup(bipartiteGraph.getAdjacentVertices())) {
+                pw3.println("error");
+            }
+            pw1.println("NO." + i + " test for this graph and input order, the vertices number is " + num3 + ", input order is order3, the color number used is " + FirstFit.colorNum);
+            pw2.println("NO." + i + " test for this graph and input order, the vertices number is " + num3 + ", input order is order3, the color number used is " + CBIP.colorNum);
+            pw3.println("NO." + i + " test for this graph and input order, the vertices number is " + num3 + ", input order is order3, the color number used is " + newAlgorithm.getColorNum());
         }
-        System.out.println(num4 + " " + FirstFit.colorNum);
-        System.out.println(num4 + " " + CBIP.colorNum);
-        System.out.println(num4 + " " + newAlgorithm.getColorNum());
+
+        for (int i = 0; i < 5; i++) {
+            int num4 = 0;
+            FirstFit ff = new FirstFit();
+            CBIP cbip = new CBIP();
+            FirstFit.colorNum = 0;
+            CBIP.colorNum = 0;
+            NewAlgorithm newAlgorithm = new NewAlgorithm();
+
+            LinkedHashMap<String, Set<String>> input4 = GenerateVAMPHOrder.generateVAMPHOrder4(bipartiteGraph);
+            for (Map.Entry<String, Set<String>> entry : input4.entrySet()) {
+                num4++;
+                String vertex = entry.getKey();
+                Set<String> neighbor = entry.getValue();
+
+                ff.FirstFit(vertex, neighbor);
+                cbip.CBIP(vertex, neighbor);
+                newAlgorithm.newAlgorithm(vertex, neighbor);
+            }
+
+            if (FirstFit.checkDup(bipartiteGraph.getAdjacentVertices())) {
+                pw1.println("error");
+            }
+            if (CBIP.checkDup(bipartiteGraph.getAdjacentVertices())) {
+                pw2.println("error");
+            }
+            if (NewAlgorithm.checkDup(bipartiteGraph.getAdjacentVertices())) {
+                pw3.println("error");
+            }
+            pw1.println("NO." + i + " test for this graph and input order, the vertices number is " + num4 + ", input order is order4, the color number used is " + FirstFit.colorNum);
+            pw2.println("NO." + i + " test for this graph and input order, the vertices number is " + num4 + ", input order is order4, the color number used is " + CBIP.colorNum);
+            pw3.println("NO." + i + " test for this graph and input order, the vertices number is " + num4 + ", input order is order4, the color number used is " + newAlgorithm.getColorNum());
+        }
+
+        pw1.close();
+        pw2.close();
+        pw3.close();
+        fw1.close();
+        fw2.close();
+        fw3.close();
     }
 
 

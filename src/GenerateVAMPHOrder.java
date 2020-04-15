@@ -29,6 +29,9 @@ public class GenerateVAMPHOrder {
             vertexList.add(UList.get(i));
             vertexList.add(VList.get(i));
         }
+        if (!checkIfTwosidesEqual(graph)) {
+            vertexList.add(UList.get(UList.size() - 1));
+        }
 
         return generateVAMPHModel(graph, vertexList);
     }
@@ -56,6 +59,9 @@ public class GenerateVAMPHOrder {
         }
         for (int i = 0; i < lastRound; i++) {
             vertexList.add(UList.get(5 * index + i));
+        }
+        if (!checkIfTwosidesEqual(graph)) {
+            vertexList.add(UList.get(UList.size() - 1));
         }
         for (int i = 0; i < lastRound; i++) {
             vertexList.add(VList.get(5 * index + i));
@@ -99,6 +105,10 @@ public class GenerateVAMPHOrder {
             vertexList.add(UList.get(2 * index + i));
         }
 
+        if (!checkIfTwosidesEqual(graph)) {
+            vertexList.add(UList.get(UList.size() - 1));
+        }
+
         return generateVAMPHModel(graph, vertexList);
     }
 
@@ -127,10 +137,14 @@ public class GenerateVAMPHOrder {
 
     private static BipartiteGraph calculateandsetN(BipartiteGraph graph) {
         if (graph.getN() == 0) {
-            graph.setN(graph.getVertexUSet().size());
+            graph.setN(graph.getVertexVSet().size());
             return graph;
         } else {
             return graph;
         }
+    }
+
+    private static boolean checkIfTwosidesEqual(BipartiteGraph graph) {
+        return graph.getVertexVSet().size() == graph.getVertexUSet().size();
     }
 }
