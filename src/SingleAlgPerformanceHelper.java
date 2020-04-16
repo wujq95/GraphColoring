@@ -1,10 +1,7 @@
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class SingleAlgPerformanceHelper {
     static java.text.DecimalFormat df = new java.text.DecimalFormat("#.0");
@@ -36,10 +33,17 @@ public class SingleAlgPerformanceHelper {
             int num = 0;
             FirstFit ff = new FirstFit();
             CBIP cbip = new CBIP();
-            FirstFit.colorNum = 0;
-            CBIP.colorNum = 0;
             NewAlgorithm newAlgorithm = new NewAlgorithm();
+
+            FirstFit.colorNum = 0;
+            FirstFit.map = new HashMap<>();
+            CBIP.colorNum = 0;
+            CBIP.inputStorage = new HashMap<>();
+            CBIP.map = new HashMap<>();
             NewAlgorithm.colorMap = new HashMap<>();
+            NewAlgorithm.vertexMap = new HashMap<>();
+            NewAlgorithm.I1 = new HashSet<>();
+            NewAlgorithm.I2 = new HashSet<>();
 
             for (Map.Entry<String, Set<String>> entry : input.entrySet()) {
                 num++;
@@ -59,9 +63,9 @@ public class SingleAlgPerformanceHelper {
             if (NewAlgorithm.checkDup(graph.getAdjacentVertices())) {
                 pw3.println("error");
             }
-            pw1.println("NO." + round + " test for this graph and input order, the vertices number is " + num + ", N is " + graph.getN() + ", P is " + graph.getP() + ", input order is order1, the color number used is " + FirstFit.colorNum);
-            pw2.println("NO." + round + " test for this graph and input order, the vertices number is " + num + ", N is " + graph.getN() + ", P is " + graph.getP() + ", input order is order1, the color number used is " + CBIP.colorNum);
-            pw3.println("NO." + round + " test for this graph and input order, the vertices number is " + num + ", N is " + graph.getN() + ", P is " + graph.getP() + ", input order is order1, the color number used is " + newAlgorithm.getColorNum());
+            pw1.println("NO." + round + " test for this graph and input order, the vertices number is " + num + ", N is " + graph.getN() + ", P is " + graph.getP() + ", input order is " + order + ", the color number used is " + FirstFit.colorNum);
+            pw2.println("NO." + round + " test for this graph and input order, the vertices number is " + num + ", N is " + graph.getN() + ", P is " + graph.getP() + ", input order is " + order + ", the color number used is " + CBIP.colorNum);
+            pw3.println("NO." + round + " test for this graph and input order, the vertices number is " + num + ", N is " + graph.getN() + ", P is " + graph.getP() + ", input order is " + order + ", the color number used is " + newAlgorithm.getColorNum());
 
             aFF = (FirstFit.colorNum + aFF * (round - 1)) / (round);
             avgFF = df.format(aFF);
