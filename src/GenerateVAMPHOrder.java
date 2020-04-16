@@ -121,6 +121,7 @@ public class GenerateVAMPHOrder {
             appeared.add(vertex);
 
             Set<String> neighbors = adjacentVertices.get(vertex);
+
             Set<String> appearedNeighbors = findAppearedNeighbors(appeared, neighbors);
             graphOrderingInput.put(vertex, appearedNeighbors);
         }
