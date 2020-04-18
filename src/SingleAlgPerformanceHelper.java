@@ -47,12 +47,21 @@ public class SingleAlgPerformanceHelper {
 
             for (Map.Entry<String, Set<String>> entry : input.entrySet()) {
                 num++;
-                String vertex = entry.getKey();
-                Set<String> neighbor = entry.getValue();
+                StringBuffer vertex = new StringBuffer();
+                for(int i=0;i<entry.getKey().length();i++){
+                    vertex.append(entry.getKey().charAt(i));
+                }
+                //vertex = entry.getKey();
+                Set<String> neighbor = new HashSet<>();
+                Iterator it = entry.getValue().iterator();
+                while (it.hasNext()){
+                    neighbor.add((String)it.next());
+                }
+                //neighbor = entry.getValue();
 
-                ff.FirstFit(vertex, neighbor);
-                cbip.CBIP(vertex, neighbor);
-                newAlgorithm.newAlgorithm(vertex, neighbor);
+                ff.FirstFit(vertex.toString(), neighbor);
+                cbip.CBIP(vertex.toString(), neighbor);
+                newAlgorithm.newAlgorithm(vertex.toString(), neighbor);
             }
             if (FirstFit.checkDup(graph.getAdjacentVertices())) {
                 pw1.println("error");
