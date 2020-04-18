@@ -1,0 +1,1015 @@
+random method make bipartite ./BenchmarkGraphs/email-enron-only.mtx
+NO.1 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 4
+NO.2 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 4
+NO.3 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 4
+NO.4 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 4
+NO.5 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 4
+NO.6 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 4
+NO.7 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 4
+NO.8 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 4
+NO.9 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 4
+NO.10 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 4
+
+NO.1 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 4
+NO.2 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 4
+NO.3 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 4
+NO.4 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 4
+NO.5 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 4
+NO.6 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 4
+NO.7 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 4
+NO.8 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 4
+NO.9 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 4
+NO.10 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 4
+
+NO.1 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 4
+NO.2 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 4
+NO.3 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 4
+NO.4 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 4
+NO.5 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 4
+NO.6 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 4
+NO.7 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 4
+NO.8 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 4
+NO.9 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 4
+NO.10 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 4
+
+NO.1 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 4
+NO.2 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 4
+NO.3 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 4
+NO.4 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 4
+NO.5 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 4
+NO.6 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 4
+NO.7 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 4
+NO.8 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 4
+NO.9 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 4
+NO.10 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 4
+
+random method make bipartite ./BenchmarkGraphs/rt-twitter-copen.mtx
+NO.1 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 6
+NO.2 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 6
+NO.3 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 6
+NO.4 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 6
+NO.5 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 6
+NO.6 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 6
+NO.7 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 6
+NO.8 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 6
+NO.9 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 6
+NO.10 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 6
+
+NO.1 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 6
+NO.2 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 6
+NO.3 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 6
+NO.4 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 6
+NO.5 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 6
+NO.6 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 6
+NO.7 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 6
+NO.8 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 6
+NO.9 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 6
+NO.10 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 6
+
+NO.1 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 5
+NO.2 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 5
+NO.3 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 5
+NO.4 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 5
+NO.5 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 5
+NO.6 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 5
+NO.7 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 5
+NO.8 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 5
+NO.9 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 5
+NO.10 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 5
+
+NO.1 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 5
+NO.2 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 5
+NO.3 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 5
+NO.4 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 5
+NO.5 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 5
+NO.6 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 5
+NO.7 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 5
+NO.8 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 5
+NO.9 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 5
+NO.10 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 5
+
+random method make bipartite ./BenchmarkGraphs/socfb-Caltech36.mtx
+NO.1 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order1, the color number used is 4
+NO.2 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order1, the color number used is 4
+NO.3 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order1, the color number used is 4
+NO.4 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order1, the color number used is 4
+NO.5 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order1, the color number used is 4
+NO.6 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order1, the color number used is 4
+NO.7 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order1, the color number used is 4
+NO.8 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order1, the color number used is 4
+NO.9 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order1, the color number used is 4
+NO.10 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order1, the color number used is 4
+
+NO.1 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order2, the color number used is 4
+NO.2 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order2, the color number used is 4
+NO.3 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order2, the color number used is 4
+NO.4 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order2, the color number used is 4
+NO.5 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order2, the color number used is 4
+NO.6 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order2, the color number used is 4
+NO.7 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order2, the color number used is 4
+NO.8 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order2, the color number used is 4
+NO.9 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order2, the color number used is 4
+NO.10 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order2, the color number used is 4
+
+NO.1 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order3, the color number used is 4
+NO.2 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order3, the color number used is 4
+NO.3 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order3, the color number used is 4
+NO.4 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order3, the color number used is 4
+NO.5 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order3, the color number used is 4
+NO.6 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order3, the color number used is 4
+NO.7 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order3, the color number used is 4
+NO.8 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order3, the color number used is 4
+NO.9 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order3, the color number used is 4
+NO.10 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order3, the color number used is 4
+
+NO.1 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order4, the color number used is 4
+NO.2 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order4, the color number used is 4
+NO.3 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order4, the color number used is 4
+NO.4 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order4, the color number used is 4
+NO.5 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order4, the color number used is 4
+NO.6 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order4, the color number used is 4
+NO.7 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order4, the color number used is 4
+NO.8 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order4, the color number used is 4
+NO.9 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order4, the color number used is 4
+NO.10 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order4, the color number used is 4
+
+random method make bipartite ./BenchmarkGraphs/socfb-Reed98.mtx
+NO.1 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order1, the color number used is 4
+NO.2 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order1, the color number used is 4
+NO.3 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order1, the color number used is 4
+NO.4 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order1, the color number used is 4
+NO.5 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order1, the color number used is 4
+NO.6 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order1, the color number used is 4
+NO.7 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order1, the color number used is 4
+NO.8 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order1, the color number used is 4
+NO.9 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order1, the color number used is 4
+NO.10 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order1, the color number used is 4
+
+NO.1 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order2, the color number used is 5
+NO.2 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order2, the color number used is 5
+NO.3 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order2, the color number used is 5
+NO.4 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order2, the color number used is 5
+NO.5 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order2, the color number used is 5
+NO.6 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order2, the color number used is 5
+NO.7 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order2, the color number used is 5
+NO.8 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order2, the color number used is 5
+NO.9 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order2, the color number used is 5
+NO.10 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order2, the color number used is 5
+
+NO.1 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order3, the color number used is 5
+NO.2 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order3, the color number used is 5
+NO.3 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order3, the color number used is 5
+NO.4 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order3, the color number used is 5
+NO.5 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order3, the color number used is 5
+NO.6 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order3, the color number used is 5
+NO.7 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order3, the color number used is 5
+NO.8 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order3, the color number used is 5
+NO.9 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order3, the color number used is 5
+NO.10 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order3, the color number used is 5
+
+NO.1 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order4, the color number used is 4
+NO.2 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order4, the color number used is 4
+NO.3 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order4, the color number used is 4
+NO.4 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order4, the color number used is 4
+NO.5 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order4, the color number used is 4
+NO.6 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order4, the color number used is 4
+NO.7 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order4, the color number used is 4
+NO.8 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order4, the color number used is 4
+NO.9 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order4, the color number used is 4
+NO.10 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order4, the color number used is 4
+
+random method make bipartite ./BenchmarkGraphs/web-polblogs.mtx
+NO.1 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order1, the color number used is 4
+NO.2 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order1, the color number used is 4
+NO.3 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order1, the color number used is 4
+NO.4 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order1, the color number used is 4
+NO.5 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order1, the color number used is 4
+NO.6 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order1, the color number used is 4
+NO.7 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order1, the color number used is 4
+NO.8 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order1, the color number used is 4
+NO.9 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order1, the color number used is 4
+NO.10 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order1, the color number used is 4
+
+NO.1 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order2, the color number used is 4
+NO.2 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order2, the color number used is 4
+NO.3 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order2, the color number used is 4
+NO.4 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order2, the color number used is 4
+NO.5 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order2, the color number used is 4
+NO.6 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order2, the color number used is 4
+NO.7 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order2, the color number used is 4
+NO.8 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order2, the color number used is 4
+NO.9 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order2, the color number used is 4
+NO.10 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order2, the color number used is 4
+
+NO.1 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order3, the color number used is 6
+NO.2 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order3, the color number used is 6
+NO.3 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order3, the color number used is 6
+NO.4 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order3, the color number used is 6
+NO.5 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order3, the color number used is 6
+NO.6 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order3, the color number used is 6
+NO.7 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order3, the color number used is 6
+NO.8 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order3, the color number used is 6
+NO.9 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order3, the color number used is 6
+NO.10 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order3, the color number used is 6
+
+NO.1 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order4, the color number used is 4
+NO.2 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order4, the color number used is 4
+NO.3 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order4, the color number used is 4
+NO.4 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order4, the color number used is 4
+NO.5 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order4, the color number used is 4
+NO.6 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order4, the color number used is 4
+NO.7 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order4, the color number used is 4
+NO.8 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order4, the color number used is 4
+NO.9 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order4, the color number used is 4
+NO.10 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order4, the color number used is 4
+
+random method make bipartite ./BenchmarkGraphs/email-enron-only.mtx
+NO.1 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 5
+NO.2 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 5
+NO.3 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 5
+NO.4 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 5
+NO.5 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 5
+NO.6 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 5
+NO.7 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 5
+NO.8 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 5
+NO.9 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 5
+NO.10 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 5
+
+NO.1 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 4
+NO.2 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 4
+NO.3 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 4
+NO.4 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 4
+NO.5 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 4
+NO.6 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 4
+NO.7 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 4
+NO.8 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 4
+NO.9 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 4
+NO.10 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 4
+
+NO.1 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 6
+NO.2 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 6
+NO.3 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 6
+NO.4 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 6
+NO.5 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 6
+NO.6 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 6
+NO.7 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 6
+NO.8 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 6
+NO.9 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 6
+NO.10 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 6
+
+NO.1 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 6
+NO.2 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 6
+NO.3 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 6
+NO.4 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 6
+NO.5 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 6
+NO.6 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 6
+NO.7 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 6
+NO.8 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 6
+NO.9 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 6
+NO.10 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 6
+
+random method make bipartite ./BenchmarkGraphs/rt-twitter-copen.mtx
+NO.1 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 5
+NO.2 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 5
+NO.3 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 5
+NO.4 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 5
+NO.5 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 5
+NO.6 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 5
+NO.7 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 5
+NO.8 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 5
+NO.9 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 5
+NO.10 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 5
+
+NO.1 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 6
+NO.2 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 6
+NO.3 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 6
+NO.4 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 6
+NO.5 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 6
+NO.6 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 6
+NO.7 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 6
+NO.8 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 6
+NO.9 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 6
+NO.10 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 6
+
+NO.1 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 6
+NO.2 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 6
+NO.3 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 6
+NO.4 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 6
+NO.5 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 6
+NO.6 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 6
+NO.7 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 6
+NO.8 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 6
+NO.9 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 6
+NO.10 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 6
+
+NO.1 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 6
+NO.2 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 6
+NO.3 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 6
+NO.4 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 6
+NO.5 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 6
+NO.6 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 6
+NO.7 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 6
+NO.8 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 6
+NO.9 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 6
+NO.10 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 6
+
+random method make bipartite ./BenchmarkGraphs/socfb-Caltech36.mtx
+NO.1 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order1, the color number used is 5
+NO.2 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order1, the color number used is 5
+NO.3 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order1, the color number used is 5
+NO.4 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order1, the color number used is 5
+NO.5 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order1, the color number used is 5
+NO.6 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order1, the color number used is 5
+NO.7 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order1, the color number used is 5
+NO.8 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order1, the color number used is 5
+NO.9 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order1, the color number used is 5
+NO.10 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order1, the color number used is 5
+
+NO.1 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order2, the color number used is 5
+NO.2 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order2, the color number used is 5
+NO.3 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order2, the color number used is 5
+NO.4 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order2, the color number used is 5
+NO.5 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order2, the color number used is 5
+NO.6 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order2, the color number used is 5
+NO.7 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order2, the color number used is 5
+NO.8 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order2, the color number used is 5
+NO.9 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order2, the color number used is 5
+NO.10 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order2, the color number used is 5
+
+NO.1 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order3, the color number used is 5
+NO.2 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order3, the color number used is 5
+NO.3 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order3, the color number used is 5
+NO.4 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order3, the color number used is 5
+NO.5 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order3, the color number used is 5
+NO.6 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order3, the color number used is 5
+NO.7 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order3, the color number used is 5
+NO.8 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order3, the color number used is 5
+NO.9 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order3, the color number used is 5
+NO.10 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order3, the color number used is 5
+
+NO.1 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order4, the color number used is 4
+NO.2 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order4, the color number used is 4
+NO.3 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order4, the color number used is 4
+NO.4 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order4, the color number used is 4
+NO.5 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order4, the color number used is 4
+NO.6 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order4, the color number used is 4
+NO.7 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order4, the color number used is 4
+NO.8 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order4, the color number used is 4
+NO.9 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order4, the color number used is 4
+NO.10 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order4, the color number used is 4
+
+random method make bipartite ./BenchmarkGraphs/socfb-Reed98.mtx
+random method make bipartite ./BenchmarkGraphs/email-enron-only.mtx
+NO.1 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 5
+NO.2 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 5
+NO.3 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 5
+NO.4 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 5
+NO.5 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 5
+NO.6 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 5
+NO.7 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 5
+NO.8 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 5
+NO.9 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 5
+NO.10 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 5
+
+NO.1 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 4
+NO.2 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 4
+NO.3 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 4
+NO.4 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 4
+NO.5 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 4
+NO.6 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 4
+NO.7 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 4
+NO.8 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 4
+NO.9 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 4
+NO.10 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 4
+
+NO.1 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 5
+NO.2 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 5
+NO.3 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 5
+NO.4 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 5
+NO.5 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 5
+NO.6 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 5
+NO.7 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 5
+NO.8 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 5
+NO.9 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 5
+NO.10 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 5
+
+NO.1 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 5
+NO.2 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 5
+NO.3 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 5
+NO.4 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 5
+NO.5 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 5
+NO.6 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 5
+NO.7 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 5
+NO.8 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 5
+NO.9 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 5
+NO.10 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 5
+
+random method make bipartite ./BenchmarkGraphs/rt-twitter-copen.mtx
+NO.1 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 6
+NO.2 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 6
+NO.3 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 6
+NO.4 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 6
+NO.5 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 6
+NO.6 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 6
+NO.7 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 6
+NO.8 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 6
+NO.9 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 6
+NO.10 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 6
+
+NO.1 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 6
+NO.2 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 6
+NO.3 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 6
+NO.4 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 6
+NO.5 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 6
+NO.6 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 6
+NO.7 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 6
+NO.8 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 6
+NO.9 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 6
+NO.10 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 6
+
+NO.1 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 6
+NO.2 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 6
+NO.3 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 6
+NO.4 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 6
+NO.5 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 6
+NO.6 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 6
+NO.7 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 6
+NO.8 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 6
+NO.9 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 6
+NO.10 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 6
+
+NO.1 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 5
+NO.2 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 5
+NO.3 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 5
+NO.4 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 5
+NO.5 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 5
+NO.6 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 5
+NO.7 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 5
+NO.8 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 5
+NO.9 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 5
+NO.10 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 5
+
+random method make bipartite ./BenchmarkGraphs/socfb-Caltech36.mtx
+NO.1 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order1, the color number used is 4
+NO.2 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order1, the color number used is 4
+NO.3 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order1, the color number used is 4
+NO.4 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order1, the color number used is 4
+NO.5 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order1, the color number used is 4
+NO.6 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order1, the color number used is 4
+NO.7 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order1, the color number used is 4
+NO.8 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order1, the color number used is 4
+NO.9 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order1, the color number used is 4
+NO.10 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order1, the color number used is 4
+
+NO.1 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order2, the color number used is 4
+NO.2 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order2, the color number used is 4
+NO.3 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order2, the color number used is 4
+NO.4 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order2, the color number used is 4
+NO.5 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order2, the color number used is 4
+NO.6 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order2, the color number used is 4
+NO.7 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order2, the color number used is 4
+NO.8 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order2, the color number used is 4
+NO.9 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order2, the color number used is 4
+NO.10 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order2, the color number used is 4
+
+NO.1 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order3, the color number used is 4
+NO.2 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order3, the color number used is 4
+NO.3 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order3, the color number used is 4
+NO.4 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order3, the color number used is 4
+NO.5 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order3, the color number used is 4
+NO.6 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order3, the color number used is 4
+NO.7 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order3, the color number used is 4
+NO.8 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order3, the color number used is 4
+NO.9 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order3, the color number used is 4
+NO.10 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order3, the color number used is 4
+
+random method make bipartite ./BenchmarkGraphs/email-enron-only.mtx
+NO.1 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 4
+NO.2 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 4
+NO.3 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 4
+NO.4 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 4
+NO.5 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 4
+NO.6 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 4
+NO.7 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 4
+NO.8 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 4
+NO.9 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 4
+NO.10 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 4
+
+NO.1 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 4
+NO.2 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 4
+NO.3 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 4
+NO.4 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 4
+NO.5 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 4
+NO.6 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 4
+NO.7 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 4
+NO.8 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 4
+NO.9 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 4
+NO.10 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 4
+
+NO.1 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 5
+NO.2 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 5
+NO.3 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 5
+NO.4 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 5
+NO.5 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 5
+NO.6 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 5
+NO.7 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 5
+NO.8 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 5
+NO.9 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 5
+NO.10 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 5
+
+NO.1 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 4
+NO.2 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 4
+NO.3 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 4
+NO.4 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 4
+NO.5 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 4
+NO.6 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 4
+NO.7 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 4
+NO.8 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 4
+NO.9 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 4
+NO.10 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 4
+
+random method make bipartite ./BenchmarkGraphs/rt-twitter-copen.mtx
+NO.1 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 5
+NO.2 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 5
+NO.3 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 5
+NO.4 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 5
+NO.5 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 5
+NO.6 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 5
+NO.7 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 5
+NO.8 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 5
+NO.9 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 5
+NO.10 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 5
+
+NO.1 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 6
+NO.2 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 6
+NO.3 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 6
+NO.4 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 6
+NO.5 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 6
+NO.6 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 6
+NO.7 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 6
+NO.8 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 6
+NO.9 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 6
+NO.10 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 6
+
+NO.1 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 5
+NO.2 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 5
+NO.3 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 5
+NO.4 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 5
+NO.5 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 5
+NO.6 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 5
+NO.7 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 5
+NO.8 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 5
+NO.9 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 5
+NO.10 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 5
+
+NO.1 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 6
+NO.2 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 6
+NO.3 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 6
+NO.4 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 6
+NO.5 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 6
+NO.6 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 6
+NO.7 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 6
+NO.8 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 6
+NO.9 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 6
+NO.10 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 6
+
+random method make bipartite ./BenchmarkGraphs/socfb-Caltech36.mtx
+NO.1 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order1, the color number used is 4
+NO.2 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order1, the color number used is 4
+NO.3 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order1, the color number used is 4
+NO.4 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order1, the color number used is 4
+NO.5 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order1, the color number used is 4
+NO.6 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order1, the color number used is 4
+NO.7 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order1, the color number used is 4
+NO.8 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order1, the color number used is 4
+NO.9 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order1, the color number used is 4
+NO.10 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order1, the color number used is 4
+
+NO.1 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order2, the color number used is 4
+NO.2 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order2, the color number used is 4
+NO.3 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order2, the color number used is 4
+NO.4 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order2, the color number used is 4
+NO.5 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order2, the color number used is 4
+NO.6 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order2, the color number used is 4
+NO.7 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order2, the color number used is 4
+NO.8 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order2, the color number used is 4
+NO.9 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order2, the color number used is 4
+NO.10 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order2, the color number used is 4
+
+NO.1 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order3, the color number used is 4
+NO.2 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order3, the color number used is 4
+NO.3 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order3, the color number used is 4
+NO.4 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order3, the color number used is 4
+NO.5 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order3, the color number used is 4
+NO.6 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order3, the color number used is 4
+NO.7 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order3, the color number used is 4
+NO.8 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order3, the color number used is 4
+NO.9 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order3, the color number used is 4
+NO.10 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order3, the color number used is 4
+
+NO.1 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order4, the color number used is 4
+NO.2 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order4, the color number used is 4
+NO.3 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order4, the color number used is 4
+NO.4 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order4, the color number used is 4
+NO.5 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order4, the color number used is 4
+NO.6 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order4, the color number used is 4
+NO.7 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order4, the color number used is 4
+NO.8 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order4, the color number used is 4
+NO.9 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order4, the color number used is 4
+NO.10 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order4, the color number used is 4
+
+random method make bipartite ./BenchmarkGraphs/socfb-Reed98.mtx
+NO.1 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order1, the color number used is 4
+NO.2 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order1, the color number used is 4
+NO.3 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order1, the color number used is 4
+NO.4 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order1, the color number used is 4
+NO.5 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order1, the color number used is 4
+NO.6 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order1, the color number used is 4
+NO.7 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order1, the color number used is 4
+NO.8 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order1, the color number used is 4
+NO.9 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order1, the color number used is 4
+NO.10 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order1, the color number used is 4
+
+NO.1 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order2, the color number used is 4
+NO.2 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order2, the color number used is 4
+NO.3 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order2, the color number used is 4
+NO.4 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order2, the color number used is 4
+NO.5 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order2, the color number used is 4
+NO.6 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order2, the color number used is 4
+NO.7 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order2, the color number used is 4
+NO.8 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order2, the color number used is 4
+NO.9 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order2, the color number used is 4
+NO.10 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order2, the color number used is 4
+
+random method make bipartite ./BenchmarkGraphs/email-enron-only.mtx
+NO.1 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 5
+NO.2 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 5
+NO.3 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 5
+NO.4 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 5
+NO.5 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 5
+NO.6 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 5
+NO.7 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 5
+NO.8 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 5
+NO.9 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 5
+NO.10 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 5
+
+NO.1 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 5
+NO.2 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 5
+NO.3 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 5
+NO.4 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 5
+NO.5 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 5
+NO.6 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 5
+NO.7 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 5
+NO.8 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 5
+NO.9 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 5
+NO.10 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 5
+
+NO.1 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 5
+NO.2 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 5
+NO.3 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 5
+NO.4 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 5
+NO.5 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 5
+NO.6 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 5
+NO.7 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 5
+NO.8 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 5
+NO.9 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 5
+NO.10 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 5
+
+NO.1 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 5
+NO.2 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 5
+NO.3 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 5
+NO.4 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 5
+NO.5 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 5
+NO.6 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 5
+NO.7 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 5
+NO.8 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 5
+NO.9 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 5
+NO.10 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 5
+
+random method make bipartite ./BenchmarkGraphs/rt-twitter-copen.mtx
+NO.1 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order3, the color number used is 4
+NO.2 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order3, the color number used is 4
+NO.3 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order3, the color number used is 4
+NO.4 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order3, the color number used is 4
+NO.5 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order3, the color number used is 4
+NO.6 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order3, the color number used is 4
+NO.7 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order3, the color number used is 4
+NO.8 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order3, the color number used is 4
+NO.9 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order3, the color number used is 4
+NO.10 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order3, the color number used is 4
+
+NO.1 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 5
+NO.2 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 5
+NO.3 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 5
+NO.4 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 5
+NO.5 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 5
+NO.6 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 5
+NO.7 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 5
+NO.8 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 5
+NO.9 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 5
+NO.10 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 5
+
+NO.1 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 5
+NO.2 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 5
+NO.3 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 5
+NO.4 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 5
+NO.5 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 5
+NO.6 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 5
+NO.7 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 5
+NO.8 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 5
+NO.9 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 5
+NO.10 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 5
+
+NO.1 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 5
+NO.2 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 5
+NO.3 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 5
+NO.4 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 5
+NO.5 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 5
+NO.6 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 5
+NO.7 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 5
+NO.8 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 5
+NO.9 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 5
+NO.10 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 5
+
+NO.1 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 6
+NO.2 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 6
+NO.3 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 6
+NO.4 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 6
+NO.5 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 6
+NO.6 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 6
+NO.7 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 6
+NO.8 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 6
+NO.9 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 6
+NO.10 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 6
+
+random method make bipartite ./BenchmarkGraphs/socfb-Caltech36.mtx
+NO.1 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order4, the color number used is 5
+NO.2 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order4, the color number used is 5
+NO.3 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order4, the color number used is 5
+NO.4 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order4, the color number used is 5
+NO.5 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order4, the color number used is 5
+NO.6 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order4, the color number used is 5
+NO.7 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order4, the color number used is 5
+NO.8 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order4, the color number used is 5
+NO.9 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order4, the color number used is 5
+NO.10 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order4, the color number used is 5
+
+random method make bipartite ./BenchmarkGraphs/web-polblogs.mtx
+NO.1 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order1, the color number used is 4
+NO.2 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order1, the color number used is 4
+NO.3 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order1, the color number used is 4
+NO.4 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order1, the color number used is 4
+NO.5 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order1, the color number used is 4
+NO.6 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order1, the color number used is 4
+NO.7 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order1, the color number used is 4
+NO.8 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order1, the color number used is 4
+NO.9 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order1, the color number used is 4
+NO.10 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order1, the color number used is 4
+
+NO.1 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order2, the color number used is 5
+NO.2 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order2, the color number used is 5
+NO.3 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order2, the color number used is 5
+NO.4 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order2, the color number used is 5
+NO.5 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order2, the color number used is 5
+NO.6 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order2, the color number used is 5
+NO.7 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order2, the color number used is 5
+NO.8 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order2, the color number used is 5
+NO.9 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order2, the color number used is 5
+NO.10 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order2, the color number used is 5
+
+NO.1 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order3, the color number used is 4
+NO.2 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order3, the color number used is 4
+NO.3 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order3, the color number used is 4
+NO.4 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order3, the color number used is 4
+NO.5 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order3, the color number used is 4
+NO.6 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order3, the color number used is 4
+NO.7 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order3, the color number used is 4
+NO.8 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order3, the color number used is 4
+NO.9 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order3, the color number used is 4
+NO.10 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order3, the color number used is 4
+
+random method make bipartite ./BenchmarkGraphs/email-enron-only.mtx
+NO.1 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 6
+NO.2 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 6
+NO.3 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 6
+NO.4 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 6
+NO.5 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 6
+NO.6 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 6
+NO.7 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 6
+NO.8 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 6
+NO.9 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 6
+NO.10 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order1, the color number used is 6
+
+NO.1 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 6
+NO.2 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 6
+NO.3 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 6
+NO.4 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 6
+NO.5 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 6
+NO.6 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 6
+NO.7 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 6
+NO.8 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 6
+NO.9 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 6
+NO.10 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order2, the color number used is 6
+
+NO.1 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 6
+NO.2 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 6
+NO.3 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 6
+NO.4 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 6
+NO.5 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 6
+NO.6 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 6
+NO.7 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 6
+NO.8 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 6
+NO.9 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 6
+NO.10 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order3, the color number used is 6
+
+NO.1 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 6
+NO.2 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 6
+NO.3 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 6
+NO.4 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 6
+NO.5 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 6
+NO.6 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 6
+NO.7 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 6
+NO.8 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 6
+NO.9 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 6
+NO.10 test for this graph and input order, the vertices number is 143, N is 71, P is 0.0, input order is order4, the color number used is 6
+
+random method make bipartite ./BenchmarkGraphs/rt-twitter-copen.mtx
+NO.1 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 5
+NO.2 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 5
+NO.3 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 5
+NO.4 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 5
+NO.5 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 5
+NO.6 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 5
+NO.7 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 5
+NO.8 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 5
+NO.9 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 5
+NO.10 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order1, the color number used is 5
+
+NO.1 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 6
+NO.2 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 6
+NO.3 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 6
+NO.4 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 6
+NO.5 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 6
+NO.6 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 6
+NO.7 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 6
+NO.8 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 6
+NO.9 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 6
+NO.10 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order2, the color number used is 6
+
+NO.1 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 5
+NO.2 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 5
+NO.3 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 5
+NO.4 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 5
+NO.5 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 5
+NO.6 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 5
+NO.7 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 5
+NO.8 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 5
+NO.9 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 5
+NO.10 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order3, the color number used is 5
+
+NO.1 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 5
+NO.2 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 5
+NO.3 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 5
+NO.4 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 5
+NO.5 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 5
+NO.6 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 5
+NO.7 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 5
+NO.8 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 5
+NO.9 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 5
+NO.10 test for this graph and input order, the vertices number is 761, N is 380, P is 0.0, input order is order4, the color number used is 5
+
+random method make bipartite ./BenchmarkGraphs/socfb-Caltech36.mtx
+NO.1 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order1, the color number used is 5
+NO.2 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order1, the color number used is 5
+NO.3 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order1, the color number used is 5
+NO.4 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order1, the color number used is 5
+NO.5 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order1, the color number used is 5
+NO.6 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order1, the color number used is 5
+NO.7 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order1, the color number used is 5
+NO.8 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order1, the color number used is 5
+NO.9 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order1, the color number used is 5
+NO.10 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order1, the color number used is 5
+
+NO.1 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order2, the color number used is 4
+NO.2 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order2, the color number used is 4
+NO.3 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order2, the color number used is 4
+NO.4 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order2, the color number used is 4
+NO.5 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order2, the color number used is 4
+NO.6 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order2, the color number used is 4
+NO.7 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order2, the color number used is 4
+NO.8 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order2, the color number used is 4
+NO.9 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order2, the color number used is 4
+NO.10 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order2, the color number used is 4
+
+NO.1 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order3, the color number used is 4
+NO.2 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order3, the color number used is 4
+NO.3 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order3, the color number used is 4
+NO.4 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order3, the color number used is 4
+NO.5 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order3, the color number used is 4
+NO.6 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order3, the color number used is 4
+NO.7 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order3, the color number used is 4
+NO.8 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order3, the color number used is 4
+NO.9 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order3, the color number used is 4
+NO.10 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order3, the color number used is 4
+
+NO.1 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order4, the color number used is 4
+NO.2 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order4, the color number used is 4
+NO.3 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order4, the color number used is 4
+NO.4 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order4, the color number used is 4
+NO.5 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order4, the color number used is 4
+NO.6 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order4, the color number used is 4
+NO.7 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order4, the color number used is 4
+NO.8 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order4, the color number used is 4
+NO.9 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order4, the color number used is 4
+NO.10 test for this graph and input order, the vertices number is 769, N is 384, P is 0.0, input order is order4, the color number used is 4
+
+random method make bipartite ./BenchmarkGraphs/socfb-Reed98.mtx
+NO.1 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order1, the color number used is 4
+NO.2 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order1, the color number used is 4
+NO.3 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order1, the color number used is 4
+NO.4 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order1, the color number used is 4
+NO.5 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order1, the color number used is 4
+NO.6 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order1, the color number used is 4
+NO.7 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order1, the color number used is 4
+NO.8 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order1, the color number used is 4
+NO.9 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order1, the color number used is 4
+NO.10 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order1, the color number used is 4
+
+NO.1 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order2, the color number used is 5
+NO.2 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order2, the color number used is 5
+NO.3 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order2, the color number used is 5
+NO.4 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order2, the color number used is 5
+NO.5 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order2, the color number used is 5
+NO.6 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order2, the color number used is 5
+NO.7 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order2, the color number used is 5
+NO.8 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order2, the color number used is 5
+NO.9 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order2, the color number used is 5
+NO.10 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order2, the color number used is 5
+
+NO.1 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order3, the color number used is 4
+NO.2 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order3, the color number used is 4
+NO.3 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order3, the color number used is 4
+NO.4 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order3, the color number used is 4
+NO.5 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order3, the color number used is 4
+NO.6 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order3, the color number used is 4
+NO.7 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order3, the color number used is 4
+NO.8 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order3, the color number used is 4
+NO.9 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order3, the color number used is 4
+NO.10 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order3, the color number used is 4
+
+NO.1 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order4, the color number used is 4
+NO.2 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order4, the color number used is 4
+NO.3 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order4, the color number used is 4
+NO.4 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order4, the color number used is 4
+NO.5 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order4, the color number used is 4
+NO.6 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order4, the color number used is 4
+NO.7 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order4, the color number used is 4
+NO.8 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order4, the color number used is 4
+NO.9 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order4, the color number used is 4
+NO.10 test for this graph and input order, the vertices number is 962, N is 481, P is 0.0, input order is order4, the color number used is 4
+
+random method make bipartite ./BenchmarkGraphs/web-polblogs.mtx
+NO.1 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order1, the color number used is 6
+NO.2 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order1, the color number used is 6
+NO.3 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order1, the color number used is 6
+NO.4 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order1, the color number used is 6
+NO.5 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order1, the color number used is 6
+NO.6 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order1, the color number used is 6
+NO.7 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order1, the color number used is 6
+NO.8 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order1, the color number used is 6
+NO.9 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order1, the color number used is 6
+NO.10 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order1, the color number used is 6
+
+NO.1 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order2, the color number used is 4
+NO.2 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order2, the color number used is 4
+NO.3 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order2, the color number used is 4
+NO.4 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order2, the color number used is 4
+NO.5 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order2, the color number used is 4
+NO.6 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order2, the color number used is 4
+NO.7 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order2, the color number used is 4
+NO.8 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order2, the color number used is 4
+NO.9 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order2, the color number used is 4
+NO.10 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order2, the color number used is 4
+
+NO.1 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order3, the color number used is 5
+NO.2 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order3, the color number used is 5
+NO.3 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order3, the color number used is 5
+NO.4 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order3, the color number used is 5
+NO.5 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order3, the color number used is 5
+NO.6 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order3, the color number used is 5
+NO.7 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order3, the color number used is 5
+NO.8 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order3, the color number used is 5
+NO.9 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order3, the color number used is 5
+NO.10 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order3, the color number used is 5
+
+NO.1 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order4, the color number used is 5
+NO.2 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order4, the color number used is 5
+NO.3 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order4, the color number used is 5
+NO.4 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order4, the color number used is 5
+NO.5 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order4, the color number used is 5
+NO.6 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order4, the color number used is 5
+NO.7 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order4, the color number used is 5
+NO.8 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order4, the color number used is 5
+NO.9 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order4, the color number used is 5
+NO.10 test for this graph and input order, the vertices number is 643, N is 321, P is 0.0, input order is order4, the color number used is 5
+
