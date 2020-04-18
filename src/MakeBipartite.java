@@ -25,9 +25,9 @@ public class MakeBipartite {
 		int orgGraph_size = graph.graphMap.size();
 		verNum = orgGraph_size*2;
 		
-	    for (int i = 1; i <= verNum; i++) 
+	    for (int i = 1; i <= verNum; i++) { 
 	    	makeGraphMap.put(Integer.toString(i),new HashSet<String>());
-	    
+	    }
 	    //Go through each vertex in the original graph
 	    //First vertex copy v and second copy dup_v
 	    //Connect vertex and dup_v if and only if they were connected in the Graph G
