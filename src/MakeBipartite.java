@@ -25,12 +25,13 @@ public class MakeBipartite {
 		int orgGraph_size = graph.graphMap.size();
 		verNum = orgGraph_size*2;
 		
-	    for (int i = 1; i <= verNum; i++) 
+	    for (int i = 1; i <= verNum; i++) { 
 	    	makeGraphMap.put(Integer.toString(i),new HashSet<String>());
-	    
+	    }
 	    //Go through each vertex in the original graph
 	    //First vertex copy v and second copy dup_v
 	    //Connect vertex and dup_v if and only if they were connected in the Graph G
+	    int edges_ck = 0;
 		for(int i = 0; i<graph.graphMap.size();i++) {
 			
 			String vertex = Integer.toString(i+1);
@@ -44,10 +45,12 @@ public class MakeBipartite {
 				makeGraphMap.get(newV).add(vertex);
 				vertexUSet.add(vertex);
 				vertexVSet.add(newV);
+				edges_ck++;
 			}
 					
 		}
-		
+		System.out.println("total number of vertices using duplication: " + verNum);
+		System.out.println("total number of edges using duplication: " + edges_ck);
 		
 	}
 	
@@ -91,7 +94,7 @@ public class MakeBipartite {
 				vertexVSet.add(Integer.toString(i+1));
 			}
 		}
-
+		int edges_ck = 0;
 		//go through edges set in graph G, and connect the Bipartite Graph V, U
 		for(int i = 0; i<vSet.size();i++) {
 			//retrieve each vertex from vSet
@@ -102,10 +105,12 @@ public class MakeBipartite {
 				 if(uSet.contains(uVertex)) {
 					makeGraphMap.get(vVertex).add(temp);
 					makeGraphMap.get(temp).add(vVertex);
+					edges_ck++;
 				 }
 		      }
 		}
-		
+		System.out.println("total number of vertices using random partition: " + verNum);
+		System.out.println("total number of edges using random partition: " + edges_ck);
 //		System.out.println("vSet: " + vSet.toString());
 //		System.out.println("uSet: " + uSet.toString()); 
 //		orgSet.size();

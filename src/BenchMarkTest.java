@@ -5,11 +5,11 @@ import java.util.*;
 public class BenchMarkTest {
 
     public static void main(String[] args) throws Exception {
-        runBenchmarkTest("/Users/okakiko/GraphColoring/BenchmarkGraphs/email-enron-only.mtx");
-        runBenchmarkTest("/Users/okakiko/GraphColoring/BenchmarkGraphs/rt-twitter-copen.mtx");
-        runBenchmarkTest("/Users/okakiko/GraphColoring/BenchmarkGraphs/socfb-Caltech36.mtx");
-        runBenchmarkTest("/Users/okakiko/GraphColoring/BenchmarkGraphs/socfb-Reed98.mtx");
-        runBenchmarkTest("BenchmarkGraphs/web-polblogs.mtx");
+        runBenchmarkTest("./BenchmarkGraphs/email-enron-only.mtx");
+        runBenchmarkTest("./BenchmarkGraphs/rt-twitter-copen.mtx");
+        runBenchmarkTest("./BenchmarkGraphs/socfb-Caltech36.mtx");
+        runBenchmarkTest("./BenchmarkGraphs/socfb-Reed98.mtx");
+        runBenchmarkTest("./BenchmarkGraphs/web-polblogs.mtx");
     }
 
     public static void runBenchmarkTest(String filePath) throws Exception {
