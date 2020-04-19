@@ -3,15 +3,22 @@ import java.util.*;
 
 public class NewAlgorithm {
 
+    //vertex neighbor information
     static Map<String, Set<String>> vertexMap = new HashMap<>();
+    //vertex color information
     static Map<String, Integer> colorMap = new HashMap<>();
     static Set<String> I1;
     static Set<String> I2;
 
+    /**
+     * New Algorithm
+     * @param vertex
+     * @param neighbor
+     */
     public void newAlgorithm(String vertex, Set<String> neighbor){
         vertexMap.put(vertex,neighbor);
 
-        //get max n
+        //get max color number n from previous vertices
         int max = 0;
         for(Map.Entry<String,Integer> entry:colorMap.entrySet()){
             Integer integer  = entry.getValue();
@@ -23,12 +30,14 @@ public class NewAlgorithm {
         }
 
         int m=0;
+        //call getComponent method in each loop to get the connected subgraph
         for(int i=1;i<=max;i++){
             HashSet<String> set= getComponent(i,vertex);
             Iterator it = set.iterator();
             boolean flag1 = false;
             boolean flag2 = false;
             while (it.hasNext()){
+                //check if the color is mixed
                 String str = (String) it.next();
                 if(I1.contains(str)){
                     if(colorMap.get(str)==i){
@@ -40,22 +49,29 @@ public class NewAlgorithm {
                     }
                 }
             }
+            //get the maximum index i which ai is mixed
             if(flag1&&flag2){
                 m=i+1;
             }
         }
         if(m==0) m=1;
+
+        //construct the component graph with index m
         HashSet<String> set= getComponent(m,vertex);
         Iterator it = set.iterator();
+        //check the position of new vertex and previous vertices with color am
         if(I1.contains(vertex)){
             boolean flag = false;
             while (it.hasNext()){
+                //check whether the other side of subGraph contains vertices with color am
                 String str = (String) it.next();
                 if((I2.contains(str))&&(colorMap.get(str)==m)) flag = true;
             }
             if(flag){
+                //color the vertex with bm
                 colorMap.put(vertex,-m);
             } else {
+                //color the vertex with am
                 colorMap.put(vertex,m);
             }
         }else{
@@ -71,6 +87,7 @@ public class NewAlgorithm {
             }
         }
 
+        //store neighbor information into map
         Iterator iterator = neighbor.iterator();
         while(iterator.hasNext()){
             String neigh = (String) iterator.next();
@@ -95,13 +112,14 @@ public class NewAlgorithm {
         I2 = new HashSet<>();
         I1.add(vertex);
 
+        //search all vertices in the connected subGraph containing v
         HashSet<String> componentSet = new HashSet<>();
         componentSet.add(vertex);
         Queue<String> queue = new LinkedList<>();
         queue.offer(vertex);
         while(!(queue.size()==0)){
             String str = queue.poll();
-            //check the neighbor of the point
+            //check the neighbors of the vertex
             Set<String> pointNeighbor = vertexMap.get(str);
             Iterator it = pointNeighbor.iterator();
             while(it.hasNext()){
