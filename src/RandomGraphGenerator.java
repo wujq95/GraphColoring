@@ -16,10 +16,13 @@ public class RandomGraphGenerator {
     }
 
     //generate the random graph, if N&P = 0, then generate random N and P, other than that, use the user-defined N and P.
-    public BipartiteGraph generateRandomGraph(int N, double P) {
-        if (N == 0 && P == 0) {
+    public BipartiteGraph generateRandomGraph(int verticesNumber, double P) {
+        int N;
+        if (verticesNumber == 0 && P == 0) {
             N = generateN();
             P = generateP();
+        } else {
+            N = verticesNumber / 2;
         }
 
         BipartiteGraph graph = new BipartiteGraph();

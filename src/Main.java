@@ -5,6 +5,8 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) throws Exception {
+        RandomGraphGenerator rg = new RandomGraphGenerator();
+
         runBenchmarkTestUsingRandomConversion("BenchmarkGraphs/email-enron-only.mtx");
         runBenchmarkTestUsingRandomConversion("BenchmarkGraphs/rt-twitter-copen.mtx");
         runBenchmarkTestUsingRandomConversion("BenchmarkGraphs/socfb-Caltech36.mtx");
@@ -16,7 +18,6 @@ public class Main {
         runBenchmarkTestUsingDuplicateConversion("BenchmarkGraphs/socfb-Reed98.mtx");
         runBenchmarkTestUsingDuplicateConversion("BenchmarkGraphs/web-polblogs.mtx");
 
-        RandomGraphGenerator rg = new RandomGraphGenerator();
         BipartiteGraph randomGraph1 = rg.generateRandomGraph(934, 0.1372095577);
         runTest(randomGraph1);
         BipartiteGraph randomGraph2 = rg.generateRandomGraph(538, 0.6235786112);
