@@ -1,4 +1,7 @@
-import java.util.*;
+import java.util.HashSet;
+import java.util.LinkedHashMap;
+import java.util.Random;
+import java.util.Set;
 
 public class RandomGraphGenerator {
 
@@ -12,10 +15,12 @@ public class RandomGraphGenerator {
         return new Random().nextDouble();
     }
 
-    //generate the random graph
-    public BipartiteGraph generateRandomGraph() {
-        int N = generateN();
-        double P = generateP();
+    //generate the random graph, if N&P = 0, then generate random N and P, other than that, use the user-defined N and P.
+    public BipartiteGraph generateRandomGraph(int N, double P) {
+        if (N == 0 && P == 0) {
+            N = generateN();
+            P = generateP();
+        }
 
         BipartiteGraph graph = new BipartiteGraph();
         Set<String> USet = new HashSet<>();
