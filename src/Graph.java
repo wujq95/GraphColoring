@@ -44,6 +44,8 @@ public class Graph {
 		
 //		System.out.println(filestr[0]);
 //		System.out.println(filestr[1]);
+		System.out.println("=========================================");
+		System.out.println("Parsing the graph file: "+ path);
 		System.out.println("vertices: " + filestr[0].split(" ")[0]);
 		System.out.println("edges: " + filestr[0].split(" ")[2]);
 		
@@ -78,9 +80,11 @@ public class Graph {
 		}
 		if(isBipartiteFullCheck(graphMap)) {
 			System.out.println("The Graph you read is a Bipartite Graph");
+			
 		}
 		else {
 			System.out.println("The Graph you read is not a Bipartite Graph");
+			
 		}
 	}
 

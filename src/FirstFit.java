@@ -5,12 +5,16 @@ public class FirstFit {
     static HashMap<String, Integer> map = new HashMap<>();
     static Integer colorNum = 0;
 
-    //FirstFit algorithm
+    /**
+     * FirstFit algorithm
+     * @param vertex
+     * @param neighbor
+     */
     public static void FirstFit(String vertex, Set<String> neighbor) {
 
         Set<Integer> colorSet = new TreeSet<>();
 
-        //get the color of neighbors
+        //get the colors of neighbors
         Iterator<String> it = neighbor.iterator();
         while (it.hasNext()) {
             String str = (String) it.next();
