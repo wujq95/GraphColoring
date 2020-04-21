@@ -3,10 +3,12 @@ import java.io.PrintWriter;
 import java.util.*;
 
 public class Main {
+    static java.text.DecimalFormat df = new java.text.DecimalFormat("#.0");
 
     public static void main(String[] args) throws Exception {
         RandomGraphGenerator rg = new RandomGraphGenerator();
-
+        BipartiteGraph randomGraph1 = rg.generateRandomGraph(934, 0.1372095577);
+        runTest(randomGraph1);
         runBenchmarkTestUsingRandomConversion("BenchmarkGraphs/email-enron-only.mtx");
         runBenchmarkTestUsingRandomConversion("BenchmarkGraphs/rt-twitter-copen.mtx");
         runBenchmarkTestUsingRandomConversion("BenchmarkGraphs/socfb-Caltech36.mtx");
@@ -18,8 +20,7 @@ public class Main {
         runBenchmarkTestUsingDuplicateConversion("BenchmarkGraphs/socfb-Reed98.mtx");
         runBenchmarkTestUsingDuplicateConversion("BenchmarkGraphs/web-polblogs.mtx");
 
-        BipartiteGraph randomGraph1 = rg.generateRandomGraph(934, 0.1372095577);
-        runTest(randomGraph1);
+
         BipartiteGraph randomGraph2 = rg.generateRandomGraph(538, 0.6235786112);
         runTest(randomGraph2);
         BipartiteGraph randomGraph3 = rg.generateRandomGraph(912, 0.1067702834);
@@ -147,17 +148,266 @@ public class Main {
     }
 
     public static void runTest(BipartiteGraph graph) throws Exception {
-        LinkedHashMap<String, Set<String>> VAMPHInput1 = GenerateVAMPHOrder.generateVAMPHOrder1(graph);
-        SingleAlgPerformanceHelper.testAlgPerformance(VAMPHInput1, "order1", graph);
+        runTestInputOrder1(graph);
+        runTestInputOrder2(graph);
+        runTestInputOrder3(graph);
+        runTestInputOrder4(graph);
+    }
 
-        LinkedHashMap<String, Set<String>> VAMPHInput2 = GenerateVAMPHOrder.generateVAMPHOrder2(graph);
-        SingleAlgPerformanceHelper.testAlgPerformance(VAMPHInput2, "order2", graph);
 
-        LinkedHashMap<String, Set<String>> VAMPHInput3 = GenerateVAMPHOrder.generateVAMPHOrder3(graph);
-        SingleAlgPerformanceHelper.testAlgPerformance(VAMPHInput3, "order3", graph);
+    public static void runTestInputOrder1(BipartiteGraph graph) throws Exception {
+        int round = 0;
+        int countSameAvgFF = 0;
+        HashMap<String, Integer> countFFhashMap = new HashMap<>();
+        String avgFF = "";
+        double aFF = 0;
+        int countSameAvgCBIP = 0;
+        HashMap<String, Integer> countCBIPhashMap = new HashMap<>();
+        String avgCBIP = "";
+        double aCBIP = 0;
+        int countSameAvgNewAlg = 0;
+        HashMap<String, Integer> countNewAlghashMap = new HashMap<>();
+        String avgNewAlg = "";
+        double aNewAlg = 0;
 
-        LinkedHashMap<String, Set<String>> VAMPHInput4 = GenerateVAMPHOrder.generateVAMPHOrder4(graph);
-        SingleAlgPerformanceHelper.testAlgPerformance(VAMPHInput4, "order4", graph);
+        while (countSameAvgFF < 5 && countSameAvgCBIP < 5 && countSameAvgNewAlg < 5) {
+            round++;
+            LinkedHashMap<String, Set<String>> VAMPHInput1 = GenerateVAMPHOrder.generateVAMPHOrder1(graph);
+            AlgorithmResult algorithmResult = SingleAlgPerformanceHelper.testAlgPerformance(VAMPHInput1, "order1", graph);
+
+            aFF = (algorithmResult.getFirstFit() + aFF * (round - 1)) / (round);
+            avgFF = df.format(aFF);
+
+            if (countFFhashMap.get(avgFF) != null) {
+                countFFhashMap.put(avgFF, countFFhashMap.get(avgFF) + 1);
+            } else {
+                countFFhashMap.put(avgFF, 1);
+            }
+
+            for (Map.Entry<String, Integer> entry : countFFhashMap.entrySet()) {
+                int value = entry.getValue();
+                countSameAvgFF = Math.max(countSameAvgFF, value);
+            }
+
+            aCBIP = (algorithmResult.getCBIP() + aCBIP * (round - 1)) / (round);
+            avgCBIP = df.format(aCBIP);
+
+            if (countCBIPhashMap.get(avgCBIP) != null) {
+                countCBIPhashMap.put(avgCBIP, countCBIPhashMap.get(avgCBIP) + 1);
+            } else {
+                countCBIPhashMap.put(avgCBIP, 1);
+            }
+
+            for (Map.Entry<String, Integer> entry : countCBIPhashMap.entrySet()) {
+                int value = entry.getValue();
+                countSameAvgCBIP = Math.max(countSameAvgCBIP, value);
+            }
+
+            aNewAlg = (algorithmResult.getNewAlg() + aNewAlg * (round - 1)) / (round);
+            avgNewAlg = df.format(aNewAlg);
+
+            if (countNewAlghashMap.get(avgNewAlg) != null) {
+                countNewAlghashMap.put(avgNewAlg, countNewAlghashMap.get(avgNewAlg) + 1);
+            } else {
+                countNewAlghashMap.put(avgNewAlg, 1);
+            }
+
+            for (Map.Entry<String, Integer> entry : countNewAlghashMap.entrySet()) {
+                int value = entry.getValue();
+                countSameAvgNewAlg = Math.max(countSameAvgNewAlg, value);
+            }
+        }
+    }
+
+    public static void runTestInputOrder2(BipartiteGraph graph) throws Exception {
+        int round = 0;
+        int countSameAvgFF = 0;
+        HashMap<String, Integer> countFFhashMap = new HashMap<>();
+        String avgFF = "";
+        double aFF = 0;
+        int countSameAvgCBIP = 0;
+        HashMap<String, Integer> countCBIPhashMap = new HashMap<>();
+        String avgCBIP = "";
+        double aCBIP = 0;
+        int countSameAvgNewAlg = 0;
+        HashMap<String, Integer> countNewAlghashMap = new HashMap<>();
+        String avgNewAlg = "";
+        double aNewAlg = 0;
+
+        while (countSameAvgFF < 5 && countSameAvgCBIP < 5 && countSameAvgNewAlg < 5) {
+            LinkedHashMap<String, Set<String>> VAMPHInput2 = GenerateVAMPHOrder.generateVAMPHOrder2(graph);
+            AlgorithmResult algorithmResult = SingleAlgPerformanceHelper.testAlgPerformance(VAMPHInput2, "order2", graph);
+
+            aFF = (algorithmResult.getFirstFit() + aFF * (round - 1)) / (round);
+            avgFF = df.format(aFF);
+
+            if (countFFhashMap.get(avgFF) != null) {
+                countFFhashMap.put(avgFF, countFFhashMap.get(avgFF) + 1);
+            } else {
+                countFFhashMap.put(avgFF, 1);
+            }
+
+            for (Map.Entry<String, Integer> entry : countFFhashMap.entrySet()) {
+                int value = entry.getValue();
+                countSameAvgFF = Math.max(countSameAvgFF, value);
+            }
+
+            aCBIP = (algorithmResult.getCBIP() + aCBIP * (round - 1)) / (round);
+            avgCBIP = df.format(aCBIP);
+
+            if (countCBIPhashMap.get(avgCBIP) != null) {
+                countCBIPhashMap.put(avgCBIP, countCBIPhashMap.get(avgCBIP) + 1);
+            } else {
+                countCBIPhashMap.put(avgCBIP, 1);
+            }
+
+            for (Map.Entry<String, Integer> entry : countCBIPhashMap.entrySet()) {
+                int value = entry.getValue();
+                countSameAvgCBIP = Math.max(countSameAvgCBIP, value);
+            }
+
+            aNewAlg = (algorithmResult.getNewAlg() + aNewAlg * (round - 1)) / (round);
+            avgNewAlg = df.format(aNewAlg);
+
+            if (countNewAlghashMap.get(avgNewAlg) != null) {
+                countNewAlghashMap.put(avgNewAlg, countNewAlghashMap.get(avgNewAlg) + 1);
+            } else {
+                countNewAlghashMap.put(avgNewAlg, 1);
+            }
+
+            for (Map.Entry<String, Integer> entry : countNewAlghashMap.entrySet()) {
+                int value = entry.getValue();
+                countSameAvgNewAlg = Math.max(countSameAvgNewAlg, value);
+            }
+        }
+    }
+
+    public static void runTestInputOrder3(BipartiteGraph graph) throws Exception {
+        int round = 0;
+        int countSameAvgFF = 0;
+        HashMap<String, Integer> countFFhashMap = new HashMap<>();
+        String avgFF = "";
+        double aFF = 0;
+        int countSameAvgCBIP = 0;
+        HashMap<String, Integer> countCBIPhashMap = new HashMap<>();
+        String avgCBIP = "";
+        double aCBIP = 0;
+        int countSameAvgNewAlg = 0;
+        HashMap<String, Integer> countNewAlghashMap = new HashMap<>();
+        String avgNewAlg = "";
+        double aNewAlg = 0;
+
+        while (countSameAvgFF < 5 && countSameAvgCBIP < 5 && countSameAvgNewAlg < 5) {
+            LinkedHashMap<String, Set<String>> VAMPHInput3 = GenerateVAMPHOrder.generateVAMPHOrder3(graph);
+            AlgorithmResult algorithmResult = SingleAlgPerformanceHelper.testAlgPerformance(VAMPHInput3, "order3", graph);
+
+            aFF = (algorithmResult.getFirstFit() + aFF * (round - 1)) / (round);
+            avgFF = df.format(aFF);
+
+            if (countFFhashMap.get(avgFF) != null) {
+                countFFhashMap.put(avgFF, countFFhashMap.get(avgFF) + 1);
+            } else {
+                countFFhashMap.put(avgFF, 1);
+            }
+
+            for (Map.Entry<String, Integer> entry : countFFhashMap.entrySet()) {
+                int value = entry.getValue();
+                countSameAvgFF = Math.max(countSameAvgFF, value);
+            }
+
+            aCBIP = (algorithmResult.getCBIP() + aCBIP * (round - 1)) / (round);
+            avgCBIP = df.format(aCBIP);
+
+            if (countCBIPhashMap.get(avgCBIP) != null) {
+                countCBIPhashMap.put(avgCBIP, countCBIPhashMap.get(avgCBIP) + 1);
+            } else {
+                countCBIPhashMap.put(avgCBIP, 1);
+            }
+
+            for (Map.Entry<String, Integer> entry : countCBIPhashMap.entrySet()) {
+                int value = entry.getValue();
+                countSameAvgCBIP = Math.max(countSameAvgCBIP, value);
+            }
+
+            aNewAlg = (algorithmResult.getNewAlg() + aNewAlg * (round - 1)) / (round);
+            avgNewAlg = df.format(aNewAlg);
+
+            if (countNewAlghashMap.get(avgNewAlg) != null) {
+                countNewAlghashMap.put(avgNewAlg, countNewAlghashMap.get(avgNewAlg) + 1);
+            } else {
+                countNewAlghashMap.put(avgNewAlg, 1);
+            }
+
+            for (Map.Entry<String, Integer> entry : countNewAlghashMap.entrySet()) {
+                int value = entry.getValue();
+                countSameAvgNewAlg = Math.max(countSameAvgNewAlg, value);
+            }
+        }
+
+    }
+
+    public static void runTestInputOrder4(BipartiteGraph graph) throws Exception {
+        int round = 0;
+        int countSameAvgFF = 0;
+        HashMap<String, Integer> countFFhashMap = new HashMap<>();
+        String avgFF = "";
+        double aFF = 0;
+        int countSameAvgCBIP = 0;
+        HashMap<String, Integer> countCBIPhashMap = new HashMap<>();
+        String avgCBIP = "";
+        double aCBIP = 0;
+        int countSameAvgNewAlg = 0;
+        HashMap<String, Integer> countNewAlghashMap = new HashMap<>();
+        String avgNewAlg = "";
+        double aNewAlg = 0;
+
+        while (countSameAvgFF < 5 && countSameAvgCBIP < 5 && countSameAvgNewAlg < 5) {
+            LinkedHashMap<String, Set<String>> VAMPHInput4 = GenerateVAMPHOrder.generateVAMPHOrder4(graph);
+            AlgorithmResult algorithmResult = SingleAlgPerformanceHelper.testAlgPerformance(VAMPHInput4, "order4", graph);
+
+            aFF = (algorithmResult.getFirstFit() + aFF * (round - 1)) / (round);
+            avgFF = df.format(aFF);
+
+            if (countFFhashMap.get(avgFF) != null) {
+                countFFhashMap.put(avgFF, countFFhashMap.get(avgFF) + 1);
+            } else {
+                countFFhashMap.put(avgFF, 1);
+            }
+
+            for (Map.Entry<String, Integer> entry : countFFhashMap.entrySet()) {
+                int value = entry.getValue();
+                countSameAvgFF = Math.max(countSameAvgFF, value);
+            }
+
+            aCBIP = (algorithmResult.getCBIP() + aCBIP * (round - 1)) / (round);
+            avgCBIP = df.format(aCBIP);
+
+            if (countCBIPhashMap.get(avgCBIP) != null) {
+                countCBIPhashMap.put(avgCBIP, countCBIPhashMap.get(avgCBIP) + 1);
+            } else {
+                countCBIPhashMap.put(avgCBIP, 1);
+            }
+
+            for (Map.Entry<String, Integer> entry : countCBIPhashMap.entrySet()) {
+                int value = entry.getValue();
+                countSameAvgCBIP = Math.max(countSameAvgCBIP, value);
+            }
+
+            aNewAlg = (algorithmResult.getNewAlg() + aNewAlg * (round - 1)) / (round);
+            avgNewAlg = df.format(aNewAlg);
+
+            if (countNewAlghashMap.get(avgNewAlg) != null) {
+                countNewAlghashMap.put(avgNewAlg, countNewAlghashMap.get(avgNewAlg) + 1);
+            } else {
+                countNewAlghashMap.put(avgNewAlg, 1);
+            }
+
+            for (Map.Entry<String, Integer> entry : countNewAlghashMap.entrySet()) {
+                int value = entry.getValue();
+                countSameAvgNewAlg = Math.max(countSameAvgNewAlg, value);
+            }
+        }
+
     }
 
 
