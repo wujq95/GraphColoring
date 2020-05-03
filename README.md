@@ -4,11 +4,11 @@
 The goal of this project is to implement three algorithms to online bipartite graph coloring problem and evaluate the performance of different algorithms. Besides, we compare the performance of algorithms of different inputs. The online graph model used for this problem is the *VAM-PH* model and the number of vertices of the bipartite graph for this problem is at most 1000.
 
 ## How To Run Using A JAR File
-The files structure of the file folder BenchmarkGraphs should be like this:
+The structure of the files should be like this:
 
 Upper Folder 
 
--- BenchmarkGraphs
+-- File Folder BenchmarkGraphs
 
 -- GraphColoring.jar
 
