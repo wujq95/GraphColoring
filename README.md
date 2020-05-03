@@ -3,16 +3,6 @@
 ## Introduction
 The goal of this project is to implement three algorithms to online bipartite graph coloring problem and evaluate the performance of different algorithms. Besides, we compare the performance of algorithms of different inputs. The online graph model used for this problem is the *VAM-PH* model and the number of vertices of the bipartite graph for this problem is at most 1000.
 
-## How To Run Using A JAR File
-The structure of the files should be like this:
-
-Upper Folder 
-
--- File Folder BenchmarkGraphs
-
--- GraphColoring.jar
-
-Then run this command line in the terminal: java -jar GraphColoring.jar
 ## Online Algorithm
 For offline algorithms, the algorithm receives all inputs at the same time, so the algorithm needs to give a result based on all input items. However, the application scenarios of many problems cannot meet the needs of offline algorithms. Also, in theoretical computer science, there is a class of NP-Complete problems. It is difficult to give polynomial-time algorithms for such problems, which makes it more difficult to solve many problems. Therefore, it is valuable to design online algorithms with the competitive ratio. For online algorithms, the algorithm is presented one item of the input sequence at a time. Then the online algorithm needs to make a real-time decision before the next item is presented. The process is finished until all items in the input sequence have been shown. Finally, the result of the online algorithm will be compared with the result of the optimal offline algorithm for all input items to get the competitive ratio, and the competitive ratio can be used to evaluate the performance of the online algorithm. Online algorithms can help solve many practical problems so it has high application value.
 
